@@ -1,0 +1,46 @@
+version: "3.9"  # Use the latest version
+
+services:
+  nextjs:
+    build:
+      context: ./files
+    ports:
+      - "3001:3000"
+    environment:
+      - PORT=3000
+    depends_on:
+      - django
+    networks:
+      - back-tier
+
+  django:
+    build:
+      context: ./zaco-global/zaco
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    environment:
+      - POSTGRES_DB=zaco
+      - POSTGRES_USER=zaco
+      - POSTGRES_PASSWORD=zaco
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+    depends_on:
+      - postgres
+    networks:
+      - back-tier
+
+  postgres:
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=zaco
+      - POSTGRES_USER=zaco
+      - POSTGRES_PASSWORD=zaco
+    networks:
+      - back-tier
+
+networks:
+  back-tier:
+    

@@ -1,0 +1,1 @@
+Requirement already satisfied: pip in c:\users\admin\appdata\local\programs\python\python312\lib\site-packages (23.3.1)
