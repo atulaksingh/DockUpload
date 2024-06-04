@@ -100,7 +100,7 @@ function EoslCard(props) {
                 </table>
 
                 <div className="">
-                  <Link href={`/eoslDetails?brand=${item?.brand?.brand_name}`}>
+                  <Link href={`/eoslDetails?brand=${item?.brand?.brand_name}`} passHref>
                     <button className="theme-btn btn-style-one mt-4">
                       <i className="btn-curve"></i>
                       <span className="btn-title">View More</span>

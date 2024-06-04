@@ -19,10 +19,10 @@ const SingleBlogSeven = ({ blog = {} }) => {
         <div className="blog-seven__content">
           <div className="blog-seven__date">{date}</div>
           <div className="blog-seven__meta">
-            <Link href="/">
+            <Link href="/" passHref>
               <i className="far fa-user-circle"></i>by {admin}
             </Link>
-            <Link href="/">
+            <Link href="/" passHref>
               <i className="far fa-comments"></i>
               {comments} Comments
             </Link>

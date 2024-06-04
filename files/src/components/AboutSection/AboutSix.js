@@ -33,7 +33,7 @@ const AboutSix = () => {
               </div>
               <div className="about-six__text">{text}</div>
 
-              <Link href={"/services"} className="">
+              <Link href={"/services"} className="" passHref>
                   <button className="theme-btn btn-style-one mt-3">
                     <i className="btn-curve"></i>
                     <span className="btn-title">Know More</span>

@@ -20,7 +20,7 @@ const SubItem = ({ subItem = {} }) => {
         pathname === href ? "current" : ""
       }`}
     >
-      <Link href={href}>
+      <Link href={href} passHref>
         <div href={href}>
           {name} {isNew && <span>new</span>}
           {subItems?.length && (
@@ -36,7 +36,7 @@ const SubItem = ({ subItem = {} }) => {
       <ul style={{ display: !menuStatus || active ? "block" : "none" }}>
         {subItems?.map((item) => (
           <li key={item.id}>
-            <Link href={item.href}>
+            <Link href={item.href} passHref>
               <div href={item.href}>
                 {item.name} {item.isNew && <span>new</span>}
               </div>
@@ -67,7 +67,7 @@ const NavItem = ({ navItem = {}, mobile = false, onePage = false }) => {
 
   return (
     <li className={`dropdown${current ? " current" : ""}`}>
-      <Link href={href}>
+      <Link href={href} passHref>
         <div
           onClick={() => mobile && href.includes("#") && toggleMenu()}
           href={href}

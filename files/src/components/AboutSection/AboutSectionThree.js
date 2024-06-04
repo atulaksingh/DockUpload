@@ -65,7 +65,7 @@ const AboutSectionThree = () => {
             covered. You can swiftly rely on Zaco Computers to keep your
             international IT Infrastructure Managed services running smoothly.
           </div>
-        <Link href={"/about"}>
+        <Link href={"/about"} passHref>
           <button className="theme-btn btn-style-one mt-4">
             <i className="btn-curve"></i>
             <span className="btn-title">Read More</span>

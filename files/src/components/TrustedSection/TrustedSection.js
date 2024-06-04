@@ -56,7 +56,7 @@ const TrustedSection = () => {
                     </ul>
                   </div>
                 </div>
-                <Link href={"/it-equipment-buyback"}>
+                <Link href={"/it-equipment-buyback"} passHref>
                   <button className="theme-btn btn-style-one mt-4">
                     <i className="btn-curve"></i>
                     <span className="btn-title">Read More</span>
