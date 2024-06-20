@@ -26,7 +26,7 @@ function EoslDetails({ EoslData, brand }) {
 
     // Make the API request using Axios when the brand changes
     const response = await axios.get(
-      `http://127.0.0.1:8000/detail-view-eosl/${brandValue}`
+      `http://django:8000/detail-view-eosl/${brandValue}`
     );
 
     // Extract the data from the response
@@ -134,7 +134,7 @@ export async function getServerSideProps(context) {
     // console.log("data3786478326",brand)
     // Make a GET request using Axios
     const response = await axios.get(
-      `http://127.0.0.1:8000/detail-view-eosl/${brand}`
+      `http://django:8000/detail-view-eosl/${brand}`
     );
 
     // Extract the data from the response

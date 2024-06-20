@@ -22,8 +22,8 @@ const SidebarPageContainerTwo = ({ isDetails = false , postId }) => {
   try {
     // Check if postId is provided
     const endpoint = postId
-      ? `http://127.0.0.1:8000/api/blogposts/${postId}/`  // API endpoint for a single post
-      : "http://127.0.0.1:8000/api/blogposts/";
+      ? `http://django:8000/api/blogposts/${postId}/`  // API endpoint for a single post
+      : "http://django:8000/api/blogposts/";
 
     // Await the Axios GET request
     const response = await axios.get(endpoint);
@@ -38,13 +38,10 @@ const SidebarPageContainerTwo = ({ isDetails = false , postId }) => {
 
 async function fetchCatData() {
   try {
-    // Check if postId is provided
-    // const endpoint = postId
-    //   ? `http://127.0.0.1:8000/api/blogposts/${postId}/`  // API endpoint for a single post
-    //   : "http://127.0.0.1:8000/api/blogposts/";
+   
 
     // Await the Axios GET request
-    const response = await axios.get("http://127.0.0.1:8000/api/categories/");
+    const response = await axios.get("http://django:8000/api/categories/");
 
     // Handle the response data
     setCatData(response.data);
