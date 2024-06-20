@@ -205,38 +205,38 @@ const navItems = [
       // { id: 8, name: "UI/UX Designing", href: "/ui-designing" },
     ],
   },
-  {
-    id: 5,
-    name: "Online Store",
-    href: "/store",
-    subNavItems: [
-      { id: 1, name: "Portfolio", href: "/portfolio" },
-      { id: 2, name: "Portfolio Single 01", href: "/portfolio-single" },
-      { id: 3, name: "Portfolio Single 02", href: "/portfolio-single-2" },
-      { id: 4, name: "Portfolio Single 03", href: "/portfolio-single-3" },
-    ],
-  },
+  // {
+  //   id: 5,
+  //   name: "Online Store",
+  //   href: "/store",
+  //   subNavItems: [
+  //     { id: 1, name: "Portfolio", href: "/portfolio" },
+  //     { id: 2, name: "Portfolio Single 01", href: "/portfolio-single" },
+  //     { id: 3, name: "Portfolio Single 02", href: "/portfolio-single-2" },
+  //     { id: 4, name: "Portfolio Single 03", href: "/portfolio-single-3" },
+  //   ],
+  // },
   {
     id: 6,
     name: "ITAD Services",
     href: "/it-equipment-buyback",
     subNavItems: [
       { id: 1, name: "IT Equipment Buyback", href: "/it-equipment-buyback" },
-      { id: 2, name: "Server BuyBack Dubai", href: "/server-buyback" },
+      // { id: 2, name: "Server BuyBack Dubai", href: "/server-buyback" },
       // { id: 3, name: "Cart Page", href: "/cart" },
       // { id: 4, name: "Checkout Page", href: "/checkout" },
     ],
   },
-  {
-    id: 7,
-    name: "Resources ",
-    href: "/blog-grid",
-    subNavItems: [
-      { id: 1, name: "Blog Sidebar", href: "/blog" },
-      { id: 2, name: "Blog Grid View", href: "/blog-grid" },
-      { id: 3, name: "Blog Single", href: "/blog-single" },
-    ],
-  },
+  // {
+  //   id: 7,
+  //   name: "Resources ",
+  //   href: "/blog-grid",
+  //   subNavItems: [
+  //     { id: 1, name: "Blog Sidebar", href: "/blog" },
+  //     { id: 2, name: "Blog Grid View", href: "/blog-grid" },
+  //     { id: 3, name: "Blog Single", href: "/blog-single" },
+  //   ],
+  // },
   {
     id: 8,
     name: "Contact Us",

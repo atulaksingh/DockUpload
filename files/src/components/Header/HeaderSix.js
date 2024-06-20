@@ -87,10 +87,10 @@ const HeaderSix = () => {
               {/* <i className="flaticon-email-2"></i> */}
               {blog}
             </Link>
-            <Link href="/case-study" className="header-six__info__link" passHref>
-              {/* <i className="flaticon-email-2"></i> */}
+            {/* <Link href="/case-study" className="header-six__info__link" passHref>
+              <i className="flaticon-email-2"></i>
               {abb}
-            </Link>
+            </Link> */}
 
             {/* <div className="">
               <ReactFlagsSelect
