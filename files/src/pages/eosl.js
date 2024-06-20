@@ -15,7 +15,7 @@ import Link from "next/link";
 import React from "react";
 
 function eosl({jobs}) {
-  // console.log("data5656",)
+  // console.log("data5656",jobs)
   // alert("hello gg")
   return (
     <>
@@ -39,6 +39,7 @@ export async function getServerSideProps() {
     // console.log("data3786478326")
 
     // Make a GET request using Axios
+    // const response = await axios.get("http://django:8000/view-eosl");
     const response = await axios.get("http://django:8000/view-eosl");
 
     // Extract the data from the response

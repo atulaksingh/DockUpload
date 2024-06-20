@@ -9,23 +9,25 @@ import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import SidebarPageContainerTwo from "@/components/SidebarPageContainerTwo/SidebarPageContainerTwo";
+import { useRouter } from "next/router";
 import React from "react";
 
-function blog() {
+const BlogSingle = () => {
+  const router = useRouter();
+  const { postId } = router.query;
+  // console.log("djjjjjj",router.query)
   return (
-    <>
-      <Layout pageTitle="Blog Sidebar">
-        <Style />
-        <HeaderSix />
-        <HeaderTwo />
-        <MobileMenu />
-        <SearchPopup />
-        <PageBanner title="Blog Posts" />
-        <SidebarPageContainerTwo />
-        <FooterSix />
-      </Layout>
-    </>
+    <Layout pageTitle="Blog Details">
+      <Style />
+      <HeaderSix />
+      <HeaderTwo />
+      <MobileMenu />
+      <SearchPopup />
+      <PageBanner title="Blog Details" page="Blog Details" />
+      <SidebarPageContainerTwo isDetails postId={postId} />
+      <FooterSix />
+    </Layout>
   );
-}
+};
 
-export default blog;
+export default BlogSingle;

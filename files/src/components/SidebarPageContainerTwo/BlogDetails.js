@@ -1,105 +1,120 @@
-import { blogDetails } from "@/data/sidebarPageContainerTwo";
 import Link from "next/link";
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import CommentBox from "./CommentBox";
 
-const {
-  image,
-  date,
-  admin,
-  title,
-  text1,
-  text2,
-  comments,
-  tags,
-  category,
-  posts,
-  inputs,
-} = blogDetails;
+const BlogDetails = ({ post }) => {
+  const [dateString, setDateString] = useState('');
 
-const BlogDetails = () => {
-  const handleSubmit = (e) => {
+  useEffect(() => {
+    if (post?.created_at) {
+      const formatDate = (created_at) => {
+        const dateObject = new Date(created_at);
+        const year = dateObject.getUTCFullYear();
+        const month = String(dateObject.getUTCMonth() + 1).padStart(2, '0');
+        const day = String(dateObject.getUTCDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+      };
+
+      setDateString(formatDate(post.created_at));
+    }
+  }, [post?.created_at]);
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const formData = new FormData(e.target);
+  //   const data = {};
+  //   formData.forEach((value, key) => (data[key] = value));
+  //   console.log(data);
+  // };
+
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const data = {};
-    inputs.forEach(({ name }) => (data[name] = formData.get(name)));
-    console.log(data);
+    const commentData = {
+      content: formData.get("content"),
+      name: formData.get("name"),
+      email: formData.get("email"),
+      post: post.id,
+    };
+
+    try {
+      const response = await fetch("http://127.0.0.1:8000/api/comments/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(commentData),
+      });
+
+      if (response.ok) {
+        const newComment = await response.json();
+
+        // console.log("Comment submitted:", newComment);
+        window.location.reload();
+        // Optionally, update state or fetch comments again to display the new comment
+      } else {
+        console.error("Failed to submit comment:", response.statusText);
+      }
+    } catch (error) {
+      console.error("An error occurred while submitting the comment:", error);
+    }
   };
+
+
+
 
   return (
     <div className="blog-details">
       <div className="post-details">
         <div className="inner-box">
           <div className="image-box">
-            <Link href="/blog-single" passHref>
-              <div>
-                <Image src={image.src} alt="" />
-              </div>
+            <Link href="/blog-single" passHref legacyBehavior>
+              <a>
+                <Image src={post?.featured_image} alt={post?.title} />
+              </a>
             </Link>
           </div>
           <div className="lower-box">
             <div className="post-meta">
               <ul className="clearfix">
                 <li>
-                  <span className="far fa-clock"></span> {date}
+                  <span className="far fa-clock"></span> {dateString}
                 </li>
                 <li>
-                  <span className="far fa-user-circle"></span> {admin}
+                  <span className="far fa-user-circle"></span> {post?.author}
                 </li>
                 <li>
-                  <span className="far fa-comments"></span> {comments.length}{" "}
-                  Comments
+                  <span className="far fa-comments"></span> {post?.comments?.length || 0} Comments
                 </li>
               </ul>
             </div>
-            <h4>{title}</h4>
+            <h4>{post?.title}</h4>
             <div className="text">
-              <div>{text1}</div>
-              <div>{text2}</div>
+              <div>{post?.content}</div>
             </div>
           </div>
         </div>
         <div className="info-row clearfix">
-          <div className="tags-info">
-            <strong>Tags:</strong>{" "}
-            {tags.map((tag, i) => (
-              <Fragment key={i}>
-                <Link href="/">{tag}</Link>
-                {tags.length !== i + 1 && ", "}
-              </Fragment>
-            ))}
-          </div>
           <div className="cat-info">
             <strong>Category:</strong>{" "}
-            {category.map((cate, i) => (
+            {post?.categories?.map((cate, i) => (
               <Fragment key={i}>
-                <Link href="/" passHref>{cate}</Link>
-                {category.length !== i + 1 && ", "}
+                <Link href={`/blog/${cate.id}`} passHref legacyBehavior>
+                  <a>{cate.name}</a>
+                </Link>
+                {post.categories.length !== i + 1 && ", "}
               </Fragment>
             ))}
           </div>
         </div>
-      </div>
-      <div className="post-control-two">
-        <Row className="clearfix">
-          {posts.map((post, i) => (
-            <Col key={i} md={6} sm={12} className="control-col">
-              <div className="control-inner">
-                <h4>
-                  <Link href="/" passHref>{post}</Link>
-                </h4>
-                <Link href="/" className="over-link" passHref></Link>
-              </div>
-            </Col>
-          ))}
-        </Row>
       </div>
       <div className="comments-area">
         <div className="comments-title">
-          <h3>{comments.length} Comments</h3>
+          <h3>{post?.comments?.length || 0} Comments</h3>
         </div>
-        {comments.map((comment) => (
+        {post?.comments?.map((comment) => (
           <CommentBox key={comment.id} comment={comment} />
         ))}
       </div>
@@ -110,29 +125,29 @@ const BlogDetails = () => {
         <div className="default-form comment-form">
           <form onSubmit={handleSubmit}>
             <Row className="clearfix">
-              {inputs.map(({ name, type, placeholder, required }) => (
-                <Col
-                  key={name}
-                  md={type ? 6 : 12}
-                  sm={12}
-                  className="form-group"
-                >
-                  {type ? (
-                    <input
-                      type={type}
-                      name={name}
-                      placeholder={placeholder}
-                      required={required}
-                    />
-                  ) : (
-                    <textarea
-                      name={name}
-                      placeholder={placeholder}
-                      required={required}
-                    ></textarea>
-                  )}
-                </Col>
-              ))}
+              <Col md={12} sm={12} className="form-group">
+                <textarea
+                  name="content"
+                  placeholder="Your Comment"
+                  required
+                ></textarea>
+              </Col>
+              <Col md={6} sm={12} className="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </Col>
+              <Col md={6} sm={12} className="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </Col>
               <Col md={12} sm={12} className="form-group">
                 <button type="submit" className="theme-btn btn-style-one">
                   <i className="btn-curve"></i>

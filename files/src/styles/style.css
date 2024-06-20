@@ -12130,7 +12130,8 @@ height: 60px;
 
 .post-details .info-row .cat-info {
   position: relative;
-  float: right;
+  /* float: right; */
+  float: left;
 }
 
 .sidebar-page-container .post-control-two {
@@ -12213,15 +12214,17 @@ height: 60px;
 
 .comments-area .comment-box {
   position: relative;
-  margin-bottom: 60px;
-  padding-bottom: 60px;
+  /* margin-bottom: 60px;
+  padding-bottom: 60px; */
+  margin-bottom: 30px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #e9ebee;
 }
 
 .comments-area .comment {
   position: relative;
   min-height: 90px;
-  padding-left: 130px;
+  /* padding-left: 130px; */
 }
 
 .comments-area .comment-box .author-thumb {
@@ -12248,7 +12251,8 @@ height: 60px;
 
 .comments-area .comment-box .info {
   position: relative;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
+  margin-bottom: 5px;
   line-height: 24px;
 }
 

@@ -6,7 +6,7 @@ import TextSplit from "../Reuseable/TextSplit";
 
 const { categories, tags, comments, posts } = sidebar;
 
-const SidebarSide = () => {
+const SidebarSide = ({ catData }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -15,7 +15,7 @@ const SidebarSide = () => {
 
   return (
     <div className="sidebar blog-sidebar">
-      <div className="sidebar-widget search-box">
+      {/* <div className="sidebar-widget search-box">
         <div className="widget-inner">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
@@ -31,10 +31,10 @@ const SidebarSide = () => {
             </div>
           </form>
         </div>
-      </div>
+      </div> */}
 
       <div className="sidebar-widget recent-posts">
-        <div className="widget-inner">
+        {/* <div className="widget-inner">
           <div className="sidebar-title">
             <h4>Latest Posts</h4>
           </div>
@@ -48,11 +48,13 @@ const SidebarSide = () => {
                 />
               </figure>
               <h5 className="text">
-                <Link href="/">{title}</Link>
+                <Link href={`/blog-single/${id}`} passHref>
+                  {title}
+                </Link>
               </h5>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       <div className="sidebar-widget archives">
@@ -61,16 +63,18 @@ const SidebarSide = () => {
             <h4>Categories</h4>
           </div>
           <ul>
-            {categories.map(({ id, title, href }) => (
+            {catData.map(({ id, name }) => (
               <li key={id}>
-                <Link href={href}>{title}</Link>
+                <Link href={`/category/${id}`} passHref>
+                  {name}
+                </Link>
               </li>
             ))}
           </ul>
         </div>
       </div>
 
-      <div className="sidebar-widget popular-tags">
+      {/* <div className="sidebar-widget popular-tags">
         <div className="widget-inner">
           <div className="sidebar-title">
             <h4>Tags</h4>
@@ -78,15 +82,17 @@ const SidebarSide = () => {
           <div className="tags-list clearfix">
             {tags.map(({ id, title, href }) => (
               <Fragment key={id}>
-                <Link href={href}>{title}</Link>
+                <Link href={href || "#"} passHref>
+                  {title}
+                </Link>
                 {tags.length !== id && ", "}
               </Fragment>
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="sidebar-widget recent-comments">
+      {/* <div className="sidebar-widget recent-comments">
         <div className="widget-inner">
           <div className="sidebar-title">
             <h4>Comments</h4>
@@ -97,14 +103,14 @@ const SidebarSide = () => {
                 <span className="flaticon-speech-bubble-2"></span>
               </div>
               <h5 className="text">
-                <Link href="/" passHref>
+                <Link href="#" passHref>
                   <TextSplit text={text} />
                 </Link>
               </h5>
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

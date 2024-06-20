@@ -5,14 +5,17 @@ import NewsBlockTwo from "./NewsBlockTwo";
 
 const { title, text, newsData } = blogPage;
 
-const ContentSide = ({ handleOpen }) => {
+const ContentSide = ({ handleOpen ,blogpost}) => {
+// console.log("dj",blogpost)
+
+  
   return (
     <>
       <div className="blog-posts">
-        {newsData.map((news) => (
+        {blogpost?.map((news) => (
           <NewsBlockTwo key={news.id} news={news} handleOpen={handleOpen} />
         ))}
-        <div className="news-block-three">
+        {/* <div className="news-block-three">
           <div className="inner-box">
             <div className="quote-icon">
               <span>“</span>
@@ -36,16 +39,16 @@ const ContentSide = ({ handleOpen }) => {
               <div className="over-link"></div>
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="more-box">
+      {/* <div className="more-box">
         <Link href="/blog" passHref>
           <div className="theme-btn btn-style-one">
             <i className="btn-curve"></i>
             <span className="btn-title">Load more posts</span>
           </div>
         </Link>
-      </div>
+      </div> */}
     </>
   );
 };

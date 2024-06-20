@@ -43,8 +43,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'api',
+    'blog',
     "corsheaders",
+    # 'import_export',
 ]
+
+
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -147,10 +153,7 @@ STATIC_URL = 'static/'
 
 # Base url to serve media files
 MEDIA_URL = '/media/'
-
-# Path where media is stored'
-MEDIA_ROOT = BASE_DIR / 'media'
-
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
