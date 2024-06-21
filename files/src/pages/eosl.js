@@ -1,6 +1,5 @@
 "use client"
 import PageBanner from "@/components/BannerSection/PageBanner";
-import CallToSectionTwo from "@/components/CallToSection/CallToSectionTwo";
 import EoslCard from "@/components/EOSL/EoslCard";
 import HeaderSix from "@/components/Header/HeaderSix";
 import HeaderTwo from "@/components/Header/HeaderTwo";
@@ -39,8 +38,8 @@ export async function getServerSideProps() {
     // console.log("data3786478326")
 
     // Make a GET request using Axios
-    // const response = await axios.get("http://django:8000/view-eosl");
     const response = await axios.get("http://django:8000/view-eosl");
+    // const response = await axios.get("http://127.0.0.1:8000/view-eosl");
 
     // Extract the data from the response
     const jobs = response.data;

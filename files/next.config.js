@@ -1,11 +1,17 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  
-}
-
-module.exports = nextConfig
 // next.config.js
-const withVideos = require('next-videos')
+const withVideos = require('next-videos');
+const withPlugins = require('next-compose-plugins');
 
-module.exports = withVideos()
+module.exports = withPlugins([withVideos], {
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'django',
+        port: '8000',
+        pathname: '/media/**',
+      },
+    ],
+  },
+});

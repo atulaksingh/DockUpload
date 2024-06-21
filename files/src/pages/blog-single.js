@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import HeaderOne from "@/components/Header/HeaderOne";

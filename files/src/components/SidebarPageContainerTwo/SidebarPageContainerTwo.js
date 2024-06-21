@@ -4,58 +4,16 @@ import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import SidebarSide from "./SidebarSide";
 const axios = require("axios");
-const BlogDetails = dynamic(() => import("./BlogDetails"));
 const ContentSide = dynamic(() => import("./ContentSide"));
 const VideoModal = dynamic(() => import("../VideoModal/VideoModal"));
 
 const { videoId } = blogPage;
 
-const SidebarPageContainerTwo = ({ isDetails = false , postId }) => {
+const SidebarPageContainerTwo = ({ isDetails = false , blogPost,catData }) => {
   const [isOpen, setOpen] = useState(false);
-  const [blogPost, setBlogPost] = useState([]);
-  const [catData, setCatData] = useState([]);
+
   const handleOpen = () => setOpen(true);
 
-    // console.log("djjj",blogPost)
-    // Define an async function to fetch data
- async function fetchData() {
-  try {
-    // Check if postId is provided
-    const endpoint = postId
-      ? `http://django:8000/api/blogposts/${postId}/`  // API endpoint for a single post
-      : "http://django:8000/api/blogposts/";
-
-    // Await the Axios GET request
-    const response = await axios.get(endpoint);
-
-    // Handle the response data
-    setBlogPost(response.data);
-  } catch (error) {
-    // Handle any errors
-    console.error("Error fetching data:", error);
-  }
-}
-
-async function fetchCatData() {
-  try {
-   
-
-    // Await the Axios GET request
-    const response = await axios.get("http://django:8000/api/categories/");
-
-    // Handle the response data
-    setCatData(response.data);
-  } catch (error) {
-    // Handle any errors
-    console.error("Error fetching data:", error);
-  }
-}
-
-useEffect(() => {
-  // Call the async function
-  fetchData();
-  fetchCatData()
-}, [postId]);  // Add postId to dependency array
 
 
   return (
@@ -64,11 +22,8 @@ useEffect(() => {
         <div className="auto-container">
           <Row className="clearfix">
             <Col lg={8} md={12} sm={12} className="content-side">
-            {isDetails && blogPost ? (  // Ensure blogPost is not null before rendering
-                <BlogDetails post={blogPost} />
-              ) : (
-                <ContentSide handleOpen={handleOpen} blogpost={blogPost} />
-              )}
+      
+              <ContentSide handleOpen={handleOpen} blogpost={blogPost} />
             </Col>
             <Col lg={4} md={12} sm={12} className="sidebar-side">
               <SidebarSide catData={catData}/>

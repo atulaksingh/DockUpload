@@ -40,7 +40,7 @@ const BlogDetails = ({ post }) => {
     };
 
     try {
-      const response = await fetch("http://django:8000/api/comments/", {
+      const response = await fetch("http://127.0.0.1:8000/api/comments/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -70,7 +70,7 @@ const BlogDetails = ({ post }) => {
       <div className="post-details">
         <div className="inner-box">
           <div className="image-box">
-            <Link href="/blog-single" passHref legacyBehavior>
+            <Link href="/blog" passHref legacyBehavior>
               <a>
                 <Image src={post?.featured_image} alt={post?.title} />
               </a>

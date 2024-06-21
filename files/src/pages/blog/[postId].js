@@ -8,6 +8,7 @@ import FooterSix from "@/components/MainFooter/FooterSix";
 import MainFooter from "@/components/MainFooter/MainFooter";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
+import BlogPageData from "@/components/SidebarPageContainerTwo/BlogPageData";
 import SidebarPageContainerTwo from "@/components/SidebarPageContainerTwo/SidebarPageContainerTwo";
 import { useRouter } from "next/router";
 import React from "react";
@@ -24,7 +25,8 @@ const BlogSingle = () => {
       <MobileMenu />
       <SearchPopup />
       <PageBanner title="Blog Details" page="Blog Details" />
-      <SidebarPageContainerTwo isDetails postId={postId} />
+      {/* <SidebarPageContainerTwo isDetails postId={postId} /> */}
+      <BlogPageData postId={postId}/>
       <FooterSix />
     </Layout>
   );

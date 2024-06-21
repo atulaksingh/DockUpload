@@ -90,24 +90,24 @@ WSGI_APPLICATION = 'zaco.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-# settings.py
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'zaco',
-        'USER': 'zaco',
-        'PASSWORD': 'zaco',
-        'HOST': 'postgres',  # Name of the PostgreSQL service in docker-compose
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# settings.py
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'zaco',
+#         'USER': 'zaco',
+#         'PASSWORD': 'zaco',
+#         'HOST': 'postgres',  # Name of the PostgreSQL service in docker-compose
+#         'PORT': '5432',
+#     }
+# }
 
 # postgres://zaco_db_user:cSDkNYUw6pbzlG8rNWrErvlsrjo4o9my@dpg-cmnpcr0cmk4c738mmqkg-a.oregon-postgres.render.com/zaco_db
 

@@ -63,13 +63,17 @@ const SidebarSide = ({ catData }) => {
             <h4>Categories</h4>
           </div>
           <ul>
-            {catData.map(({ id, name }) => (
-              <li key={id}>
-                <Link href={`/category/${id}`} passHref>
-                  {name}
-                </Link>
-              </li>
-            ))}
+          {catData && Array.isArray(catData) ? (
+          catData.map(({ id, name }) => (
+            <li key={id}>
+              <Link href={`/category/${id}`} passHref>
+                {name}
+              </Link>
+            </li>
+          ))
+        ) : (
+          <li>No categories available</li>
+        )}
           </ul>
         </div>
       </div>
