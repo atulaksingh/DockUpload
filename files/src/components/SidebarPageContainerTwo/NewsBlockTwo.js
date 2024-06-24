@@ -44,15 +44,18 @@ const NewsBlockTwo = ({ news = {}, handleOpen }) => {
 
           </Link> */}
           <Link href="/blog" passHref legacyBehavior>
+          <div className="">
             <a>
               <Image
                 src={news?.featured_image}
                 alt={news?.title}
-                width={500} // Add appropriate width
-                height={300} // Add appropriate height
+                width={100} // Add appropriate width
+                height={100} // Add appropriate height
                 layout="responsive" // Optional: Specify layout type if needed
+                className=""
               />
             </a>
+            </div>
           </Link>
           {showVideo && (
             <div onClick={handleOpen} className="vid-link lightbox-image">

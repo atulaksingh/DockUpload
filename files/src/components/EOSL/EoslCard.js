@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -6,15 +6,19 @@ function EoslCard(props) {
   const data = props.data;
   // const EOSL = props.data.eosls
   // console.log("dj", data);
-  const [selectedBrand, setSelectedBrand] = useState('all');
-  const [searchTerm, setSearchTerm] = useState('');
-  
+  const [selectedBrand, setSelectedBrand] = useState("all");
+  const [searchTerm, setSearchTerm] = useState("");
+
   // Filter data based on selected brand and search term
-  const filteredData = data?.filter(item => {
-    const brandFilter = selectedBrand === 'all' || item.brand.brand_name === selectedBrand;
-    const searchFilter = item.brand.brand_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.eosls.some(eosl => eosl.model.toLowerCase().includes(searchTerm.toLowerCase()));
-    
+  const filteredData = data?.filter((item) => {
+    const brandFilter =
+      selectedBrand === "all" || item.brand.brand_name === selectedBrand;
+    const searchFilter =
+      item.brand.brand_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.eosls.some((eosl) =>
+        eosl.model.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+
     return brandFilter && searchFilter;
   });
 
@@ -27,41 +31,43 @@ function EoslCard(props) {
   };
   return (
     <>
-      <div className="mx-60 py-10">
-        <div className="grid grid-cols-2">
-          <div className="col-span-1 w-72">
-          <select
-  className="form-select form-select-md"
-  aria-label="large select example"
-  value={selectedBrand}
-  onChange={handleBrandChange}
->
-  <option value="all">All</option>
-  {data?.map((item) => (
-    <option key={item.brand.id} value={item.brand.brand_name}>
-      {item.brand.brand_name}
-    </option>
-  ))}
-</select>
-            
+      <div className="lg:mx-60 py-10">
+        <div className="grid lg:grid-cols-2">
+          <div className="col-span-1 ">
+            <div className="w-80 lg:w-72 ml-5 lg:ml-0">
+
+            <select
+              className="form-select form-select-md"
+              aria-label="large select example"
+              value={selectedBrand}
+              onChange={handleBrandChange}
+            >
+              <option value="all">All</option>
+              {data?.map((item) => (
+                <option key={item.brand.id} value={item.brand.brand_name}>
+                  {item.brand.brand_name}
+                </option>
+              ))}
+            </select>
+            </div>
           </div>
           <div className="col-span-1  mx-auto">
             <div className="search ">
-            <form className="form-inline flex gap-3 my-2 my-lg-0">
-            <input
-              className="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              value={searchTerm}
-              onChange={handleSearchChange}
-            />
-            <button
-              className="btn btn-outline-warning my-2 my-sm-0"
-              type="submit"
-            >
-              Search
-            </button>
-          </form>
+              <form className="form-inline flex gap-3 my-2 my-lg-0">
+                <input
+                  className="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  value={searchTerm}
+                  onChange={handleSearchChange}
+                />
+                <button
+                  className="btn btn-outline-warning my-2 my-sm-0"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
               <div className="text-xs mt-1">
                 Or Search Our Entire EOSL Library by the Model Number Directly
               </div>
@@ -69,7 +75,7 @@ function EoslCard(props) {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-10 ">
+        <div className="grid lg:grid-cols-2 gap-10 ">
           {filteredData?.map((item, index) => (
             <div key={index} className="shadow-2xl ">
               <div className="p-4">
@@ -89,9 +95,9 @@ function EoslCard(props) {
                     </tr>
                   </thead>
                   <tbody>
-                    {item?.eosls?.map((item,index) => (
+                    {item?.eosls?.map((item, index) => (
                       <tr key={index} className="text-[14px] font-[400]">
-                        <td >{item?.model}</td>
+                        <td>{item?.model}</td>
                         <td>{item?.eosl_date}</td>
                         <td>{item?.category}</td>
                       </tr>
@@ -100,7 +106,10 @@ function EoslCard(props) {
                 </table>
 
                 <div className="">
-                  <Link href={`/eoslDetails?brand=${item?.brand?.brand_name}`} passHref>
+                  <Link
+                    href={`/eoslDetails?brand=${item?.brand?.brand_name}`}
+                    passHref
+                  >
                     <button className="theme-btn btn-style-one mt-4">
                       <i className="btn-curve"></i>
                       <span className="btn-title">View More</span>

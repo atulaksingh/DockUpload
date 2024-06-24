@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import HeaderSix from "@/components/Header/HeaderSix";
 import HeaderTwo from "@/components/Header/HeaderTwo";
@@ -48,24 +48,26 @@ function EoslDetails({ EoslData, brand }) {
         <SearchPopup />
         <PageBanner title="Eosl Library" />
 
-        <div className="mx-60 py-10">
-          <div className="grid grid-cols-2">
-            <div className="col-span-1 w-72">
-              <div>Select Brand</div>
+        <div className="lg:mx-60 py-10">
+          <div className="grid lg:grid-cols-2">
+            <div className="col-span-1 ">
+              <div className="w-80 lg:w-72 ml-5 lg:ml-0">
+                <div>Select Brand</div>
 
-              <select
-                className="form-select form-select-md"
-                aria-label="large select example"
-                value={selectedBrand}
-                onChange={handleBrandChange}
-              >
-                {/* <option value="all">All</option> */}
-                {eoslData?.brands?.map((item) => (
-                  <option key={item.id} value={item.brand_name}>
-                    {item.brand_name}
-                  </option>
-                ))}
-              </select>
+                <select
+                  className="form-select form-select-md"
+                  aria-label="large select example"
+                  value={selectedBrand}
+                  onChange={handleBrandChange}
+                >
+                  {/* <option value="all">All</option> */}
+                  {eoslData?.brands?.map((item) => (
+                    <option key={item.id} value={item.brand_name}>
+                      {item.brand_name}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </div>
             <div className="col-span-1  mx-auto">
               <div className="search ">

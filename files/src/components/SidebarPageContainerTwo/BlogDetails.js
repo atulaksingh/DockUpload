@@ -1,8 +1,9 @@
 import Link from "next/link";
 import React, { Fragment, useEffect, useState } from "react";
-import { Col,  Row } from "react-bootstrap";
-import CommentBox from "./CommentBox";
+import { Col, Row } from "react-bootstrap";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import CommentBox from "./CommentBox";
 
 const BlogDetails = ({ post }) => {
   const [dateString, setDateString] = useState('');
@@ -21,14 +22,7 @@ const BlogDetails = ({ post }) => {
     }
   }, [post?.created_at]);
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const formData = new FormData(e.target);
-  //   const data = {};
-  //   formData.forEach((value, key) => (data[key] = value));
-  //   console.log(data);
-  // };
-
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -41,7 +35,7 @@ const BlogDetails = ({ post }) => {
     };
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/comments/", {
+      const response = await fetch("/api/comments", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -51,10 +45,7 @@ const BlogDetails = ({ post }) => {
 
       if (response.ok) {
         const newComment = await response.json();
-
-        // console.log("Comment submitted:", newComment);
-        window.location.reload();
-        // Optionally, update state or fetch comments again to display the new comment
+        router.reload(); // Reload the page to display the new comment
       } else {
         console.error("Failed to submit comment:", response.statusText);
       }
@@ -63,9 +54,6 @@ const BlogDetails = ({ post }) => {
     }
   };
 
-
-
-
   return (
     <div className="blog-details">
       <div className="post-details">
@@ -73,14 +61,13 @@ const BlogDetails = ({ post }) => {
           <div className="image-box">
             <Link href="/blog" passHref legacyBehavior>
               <a>
-                {/* <Image src={post?.featured_image} alt={post?.title} /> */}
                 <Image
-                src={post?.featured_image}
-                alt={post?.title}
-                width={500} // Add appropriate width
-                height={300} // Add appropriate height
-                layout="responsive" // Optional: Specify layout type if needed
-              />
+                  src={post?.featured_image}
+                  alt={post?.title}
+                  width={500}
+                  height={300}
+                  layout="responsive"
+                />
               </a>
             </Link>
           </div>
@@ -169,5 +156,16 @@ const BlogDetails = ({ post }) => {
     </div>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { id } = context.params;
+
+  const res = await fetch(`http://django:8000/api/posts/${id}`);
+  const post = await res.json();
+
+  return {
+    props: { post },
+  };
+}
 
 export default BlogDetails;
