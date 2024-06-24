@@ -12,48 +12,48 @@ const VideoModal = dynamic(() => import("../VideoModal/VideoModal"));
 
 const { videoId } = blogPage;
 
-const BlogPageData = ({ isDetails = false , postId }) => {
+const BlogPageData = ({ isDetails = false , postId ,blogPost,catData}) => {
   const [isOpen, setOpen] = useState(false);
-  const [blogPost, setBlogPost] = useState([]);
-  const [catData, setCatData] = useState([]);
-  const handleOpen = () => setOpen(true);
+//   const [blogPost, setBlogPost] = useState([]);
+//   const [catData, setCatData] = useState([]);
+//   const handleOpen = () => setOpen(true);
 
    
- async function fetchData() {
-  try {
-    // Check if postId is provided
+//  async function fetchData() {
+//   try {
+//     // Check if postId is provided
 
-    // Await the Axios GET request
-    const response = await axios.get(`http://127.0.0.1:8000/api/blogposts/${postId}/`);
+//     // Await the Axios GET request
+//     const response = await axios.get(`http://127.0.0.1:8000/api/blogposts/${postId}/`);
 
-    // Handle the response data
-    setBlogPost(response.data);
-  } catch (error) {
-    // Handle any errors
-    console.error("Error fetching data:", error);
-  }
-}
+//     // Handle the response data
+//     setBlogPost(response.data);
+//   } catch (error) {
+//     // Handle any errors
+//     console.error("Error fetching data:", error);
+//   }
+// }
 
-async function fetchCatData() {
-  try {
+// async function fetchCatData() {
+//   try {
    
 
-    // Await the Axios GET request
-    const response = await axios.get("http://127.0.0.1:8000/api/categories/");
+//     // Await the Axios GET request
+//     const response = await axios.get("http://127.0.0.1:8000/api/categories/");
 
-    // Handle the response data
-    setCatData(response.data);
-  } catch (error) {
-    // Handle any errors
-    console.error("Error fetching data:", error);
-  }
-}
+//     // Handle the response data
+//     setCatData(response.data);
+//   } catch (error) {
+//     // Handle any errors
+//     console.error("Error fetching data:", error);
+//   }
+// }
 
-useEffect(() => {
-  // Call the async function
-  fetchData();
-  fetchCatData()
-}, [postId]);  // Add postId to dependency array
+// useEffect(() => {
+//   // Call the async function
+//   fetchData();
+//   fetchCatData()
+// }, [postId]);  // Add postId to dependency array
 
 
   return (

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React, { Fragment, useEffect, useState } from "react";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col,  Row } from "react-bootstrap";
 import CommentBox from "./CommentBox";
+import Image from "next/image";
 
 const BlogDetails = ({ post }) => {
   const [dateString, setDateString] = useState('');
@@ -72,7 +73,14 @@ const BlogDetails = ({ post }) => {
           <div className="image-box">
             <Link href="/blog" passHref legacyBehavior>
               <a>
-                <Image src={post?.featured_image} alt={post?.title} />
+                {/* <Image src={post?.featured_image} alt={post?.title} /> */}
+                <Image
+                src={post?.featured_image}
+                alt={post?.title}
+                width={500} // Add appropriate width
+                height={300} // Add appropriate height
+                layout="responsive" // Optional: Specify layout type if needed
+              />
               </a>
             </Link>
           </div>

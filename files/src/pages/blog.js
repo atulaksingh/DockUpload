@@ -14,7 +14,7 @@ import axios from "axios";
 import React from "react";
 
 function blog({allBlogs,allCategory}) {
-  console.log("data5656",allBlogs,allCategory)
+  // console.log("data5656",allBlogs,allCategory)
   return (
     <>
       <Layout pageTitle="Blog Sidebar">
