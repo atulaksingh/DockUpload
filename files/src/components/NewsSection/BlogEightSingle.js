@@ -21,7 +21,7 @@ const BlogEightSingle = ({ blog = {} }) => {
           <h3 className="blog-eight__title">
             <Link href={`${href}`}>{title}</Link>
           </h3>
-          <div className="blog-eight__text text-justify">{text}</div>
+          <div className="blog-eight__text text-center">{text}</div>
           {/* <div className="blog-eight__meta">
             <Link href="/" passHref>
               <i className="far fa-user-circle"></i>by {admin}

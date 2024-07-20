@@ -7,7 +7,7 @@ import TextSplit from "../Reuseable/TextSplit";
 const { year, author, socials, address2, phone2, email, about3, logo8 } =
   mainFooter;
 
-const FooterEight = () => {
+const FooterEight = ({footerData}) => {
   return (
     <>
       <footer className="footer-eight">
@@ -25,7 +25,7 @@ const FooterEight = () => {
               <div className="footer-eight__widget">
                 <h3 className="footer-eight__title">Address</h3>
                 <div>
-                  <TextSplit text={address2} />
+                  <TextSplit text={footerData.address} />
                 </div>
               </div>
             </Col>
@@ -33,9 +33,9 @@ const FooterEight = () => {
               <div className="footer-eight__widget">
                 <h3 className="footer-eight__title">Contact</h3>
                 <div>
-                  <Link href={`mailto:${email}`} passHref>{email}</Link>
+                  <Link href={`mailto:${email}`} passHref>{footerData.email}</Link>
                   <br />
-                  <Link href={`tel:${phone2.split(" ").join("")}`} passHref>{phone2}</Link>
+                  <Link href={`tel:${phone2.split(" ").join("")}`} passHref>{footerData.number}</Link>
                 </div>
               </div>
             </Col>
@@ -52,7 +52,7 @@ const FooterEight = () => {
           </Row>
         </div>
       </footer>
-      <div className="footer-eight__copyright">
+      {/* <div className="footer-eight__copyright">
         <div className="auto-container">
           <Link href="/index-main" passHref>
             <div>
@@ -63,7 +63,7 @@ const FooterEight = () => {
             © Copyright {year} by {author}
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

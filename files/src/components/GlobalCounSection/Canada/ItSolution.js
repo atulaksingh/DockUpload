@@ -7,7 +7,7 @@ import { Col, Image, Row } from "react-bootstrap";
 const { tagline, image,  } = aboutSix;
 
 const ItSolution = ({CanadaDataITS}) => {
-  const { title, text } = CanadaDataITS;
+  const { title, text , img } = CanadaDataITS;
   return (
     <section className="about-six">
       <div className="auto-container">
@@ -28,9 +28,7 @@ const ItSolution = ({CanadaDataITS}) => {
           <Col md={12} lg={7} className="animated fadeInRight mx-auto ">
             <div className="about-six__image ">
               <Image
-                src={
-                  "https://res.cloudinary.com/dt0j68vdr/image/upload/v1706954907/mplk57adylusacv1u2ar.jpg"
-                }
+                src={img.src}
                 alt=""
                 className="h-96"
               />

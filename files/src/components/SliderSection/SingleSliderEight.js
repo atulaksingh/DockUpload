@@ -3,15 +3,13 @@ import React from "react";
 
 const SingleSliderEight = ({ slide = {} }) => {
   const { bg, text, title } = slide;
-
+console.log("bg",bg)
   return (
     <div className="swiper-slide">
       <div
         className="image-layer"
         style={{
-          backgroundImage: `url(${
-            require(`@/images/update-01-10-2021/slider/${bg}`).default.src
-          })`,
+          backgroundImage: `url(${bg.src})`,
         }}
       ></div>
       <div className="auto-container">
@@ -21,14 +19,14 @@ const SingleSliderEight = ({ slide = {} }) => {
           </div>
           <h2 className="slider-eight__title">{title}</h2>
           <div className="slider-eight__btns">
-            <Link href="/" className="slider-eight__btn thm-btn__eight">
-              Case Studies
+            <Link href="/"   className="slider-eight__btn slider-eight__btn--two thm-btn__eight">
+            Contact Now
+
             </Link>
-            <div
+            {/* <div
               className="slider-eight__btn slider-eight__btn--two thm-btn__eight"
             >
-              Contact Now
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

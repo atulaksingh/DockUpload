@@ -9,7 +9,7 @@ import VisibilitySensor from "react-visibility-sensor";
 
 // const { title2, featuredImage, text, barTitle, barPercent, CanadaWhyChooseData,faqs3 } =
 //   weDOSection;
-function WhyChooseUs({title,CanadaWhyChooseData}) {
+function WhyChooseUs({title,CanadaWhyChooseData,img}) {
   const [countStart, setCountStart] = useState(false);
   const [currentFaq, setCurrentFaq] = useState(1);
 
@@ -66,7 +66,7 @@ function WhyChooseUs({title,CanadaWhyChooseData}) {
               <div className="h-full">
                 <Image
                   src={
-                    "https://res.cloudinary.com/dt0j68vdr/image/upload/v1706954907/mplk57adylusacv1u2ar.jpg"
+                   img.src
                   }
                   alt=""
                   className="h-full"

@@ -6,7 +6,7 @@ import React from "react";
 import { Image } from "react-bootstrap";
 import NavItem from "./NavItem";
 
-const { navItems, title, title3, logo8, socials, email, address, phone2 } =
+const { navItems, title, title3, logo8, socials, email, address, phone2,zacologo , logo6 } =
   headerData;
 
 const HeaderEight = () => {
@@ -48,7 +48,7 @@ const HeaderEight = () => {
             <div className="mainmenu-eight__left">
               <Link href="/index-main" passHref>
                 {/* <Link> */}
-                  <Image src={logo8.src} width={134} alt={title} />
+                  <Image src={logo6.src} width={134} alt={title} />
                 {/* </Link> */}
               </Link>
               <div onClick={toggleMenu} className="mobile-nav-toggler">
@@ -70,7 +70,7 @@ const HeaderEight = () => {
             </nav>
 
             <div className="mainmenu-eight__right">
-              <div className="search-btn mainmenu-eight__search">
+              {/* <div className="search-btn mainmenu-eight__search">
                 <button
                   onClick={toggleSearch}
                   type="button"
@@ -78,7 +78,7 @@ const HeaderEight = () => {
                 >
                   <span className="flaticon-magnifying-glass"></span>
                 </button>
-              </div>
+              </div> */}
 
               <Link
                 href={`tel:${phone2.split(" ").join("")}`}

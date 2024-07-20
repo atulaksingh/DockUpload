@@ -11,7 +11,7 @@ import dg from '@/images/zaco/Server-Maintenance.webp'
 import MapSix from "@/components/MapSection/MapSix";
 import GetQuotefour from "@/components/GetQuote/GetQuotefour";
 
-const CanadaMap = ({ className = "" }) => {
+const CanadaMap = ({ className = "" ,contact}) => {
   // const {
   //   register,
   //   handleSubmit,
@@ -24,7 +24,14 @@ const CanadaMap = ({ className = "" }) => {
         <Row className="clearfix">
           <Col lg={6} md={12} sm={12} className="left-col">
 
-       <MapSix />
+       {/* <MapSix /> */}
+       <div className="news-two__image h-full">
+              <Image
+                src={contact.src}
+                className="h-full"
+                alt="GET-IN-TOUCH"
+              />
+            </div>
 
           </Col>
           <Col lg={6} md={12} sm={12} className="right-col">

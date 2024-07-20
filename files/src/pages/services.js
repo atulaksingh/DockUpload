@@ -18,11 +18,13 @@ import TestimonialsSection from "@/components/TestimonialsSection/TestimonialsSe
 import WeWorkSection from "@/components/WeWorkSection/WeWorkSection";
 import React from "react";
 import bg from "@/images/zaco/SERVICES/SERVICES-banner.png";
+import HeaderSix from "@/components/Header/HeaderSix";
 const services = () => {
   return (
     <Layout pageTitle="Services">
       <Style />
-      <Style />
+      {/* <Style /> */}
+      <HeaderSix />
       <HeaderTwo />
       <MobileMenu />
       <SearchPopup />

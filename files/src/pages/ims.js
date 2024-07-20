@@ -1,6 +1,7 @@
 import AboutMeOne from "@/components/AboutSection/AboutMeOne";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import CallToSectionTwo from "@/components/CallToSection/CallToSectionTwo";
+import HeaderSix from "@/components/Header/HeaderSix";
 import HeaderTwo from "@/components/Header/HeaderTwo";
 import MobileMenu from "@/components/Header/MobileMenu";
 import ImsBenefits from "@/components/IT_IMS/ImsBenefits";
@@ -22,6 +23,7 @@ function ims() {
         <Style />
 
         <Style />
+        <HeaderSix />
         <HeaderTwo />
         <MobileMenu />
         <SearchPopup />

@@ -41,7 +41,7 @@ function ServiceCard1() {
                     support.
                   </h2>
                 </div>
-                <div className="about-six__text">
+                <div className="about-six__text ">
                 Zaco understands how critical IT Support is for your business operations. Our highly-trained IT team delivers prompt responses and best-in-class service to ensure optimal performance of your environments. With over 20 years of experience supporting all major technology brands, we have the expertise to resolve even the most complex issues quickly. You can rely on our technical IT support specialists to keep your systems running smoothly around the clock. We stay abreast of the latest innovations to continuously enhance our capabilities and give you peace of mind knowing that your IT infrastructure is in capable hands.
                 </div>
               </div>

@@ -23,25 +23,47 @@ import SponsorEight from "@/components/SponsorsSection/SponsorEight";
 import TestimonialsEight from "@/components/TestimonialsSection/TestimonialsEight";
 import VideoSeven from "@/components/VideoSection/VideoSeven";
 import weDOSection from "@/data/weDOSection";
+import image1 from "../assets/images/zaco/UK/uk-home-1.jpg";
+import image2 from "../assets/images/zaco/UK/uk-home-2.jpg";
+import image3 from "../assets/images/zaco/UK/uk-home-3.jpg";
+import image4 from "../assets/images/zaco/UK/uk-home-4.jpg";
+import image5 from "../assets/images/zaco/UK/uk-home-5.jpg";
+import image6 from "../assets/images/zaco/UK/uk-home-6.jpg";
+import contact from "../assets/images/zaco/UK/contact-uae-1.jpg";
 import React from "react";
+const bannerData={
+bg:image6,
+title:"Reach the Limits with Consulting Agency."
+};
+
 const CanadaData = {
   "title": "Your Trusted IT Service Provider & Solutions Company",
-  "text": "As a premier IT service provider, Zaco Computers UK Limited is dedicated to delivering innovative IT business solutions tailored to meet the needs of businesses across the United Kingdom."
+  "text": "As a premier IT service provider, Zaco Computers UK Limited is dedicated to delivering innovative IT business solutions tailored to meet the needs of businesses across the United Kingdom.",
+  "img":image2
 };
 const CanadaDataITS = {
   "title": "Comprehensive IT Solutions Provider in the United Kingdom",
-  "text": "At Zaco Computers UK Limited, we understand the challenges businesses face in today's digital landscape. That's why we offer a comprehensive suite of IT solutions designed to streamline operations, enhance productivity, and drive growth."
+  "text": "At Zaco Computers UK Limited, we understand the challenges businesses face in today's digital landscape. That's why we offer a comprehensive suite of IT solutions designed to streamline operations, enhance productivity, and drive growth.",
+ "img":image3
 };
 const CanadaDataTIT = {
   "title": "Your Trusted IT Partner – Zaco Computers UK Limited",
-  "text": "From IT infrastructure management to software solutions and cybersecurity, we're here to support your business in every step of the way. Our team of experts is committed to delivering personalized service and tailored solutions that align with your unique goals and objectives."
+  "text": "From IT infrastructure management to software solutions and cybersecurity, we're here to support your business in every step of the way. Our team of experts is committed to delivering personalized service and tailored solutions that align with your unique goals and objectives.",
+  "img":image4
 };
 const CanadaDataCard4 = {
   "title": "Managed IT Services in the United Kingdom",
-  "text": "Experience peace of mind with our managed IT services. From proactive monitoring and maintenance to strategic planning and implementation, we handle all aspects of IT management so you can focus on what matters most – running your business. With our managed services, you can rest assured knowing that your IT infrastructure is in expert hands, allowing you to stay ahead of the competition and drive business success."
+  "text": "Experience peace of mind with our managed IT services. From proactive monitoring and maintenance to strategic planning and implementation, we handle all aspects of IT management so you can focus on what matters most – running your business. With our managed services, you can rest assured knowing that your IT infrastructure is in expert hands, allowing you to stay ahead of the competition and drive business success.",
+  "img":image5
 };
 const {  UKWhyChooseData } =
   weDOSection;
+
+  const footerData={
+    "address":"124 City Road, London,England, EC1V 2NX.",
+    "number":" +44 203 815 8028",
+    "email":"info@zacocomputer.com"
+  }
 function UK() {
   return (
     <>
@@ -60,15 +82,15 @@ function UK() {
         <HeaderEight />
         <MobileMenu />
         <SearchPopup />
-        <SliderEight />
+        <SliderEight bannerData={bannerData}/>
         <ItBusiness canadaData={CanadaData}  />
         <ItSolution CanadaDataITS={CanadaDataITS}/>
         <TrustedIt CanadaDataTIT={CanadaDataTIT}/>
         <CanadaCard4 CanadaDataCard4={CanadaDataCard4}/>
-        <WhyChooseUs title={"Why Choose Zaco Computers UK Limited?"} CanadaWhyChooseData={UKWhyChooseData}/>
-        <CanadaMap />
+        <WhyChooseUs title={"Why Choose Zaco Computers UK Limited?"} CanadaWhyChooseData={UKWhyChooseData} img={image1}/>
+        <CanadaMap contact={contact}/>
         
-        <FooterEight />
+        <FooterEight footerData={footerData}/>
       </Layout>
     </>
   );

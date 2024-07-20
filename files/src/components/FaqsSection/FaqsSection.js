@@ -7,7 +7,7 @@ const Faqs = ({ allFaqs = {} }) => {
   const [current, setCurrent] = useState(defaultCurrent);
 
   return (
-    <Col lg={6} md={12} sm={12} className="faq-block">
+    <Col lg={12} md={12} sm={12} className="faq-block">
       <ul className="accordion-box clearfix">
         {faqs.map(({ id, title, text }) => (
           <li
@@ -45,7 +45,7 @@ const FaqsSection = () => {
       <div className="auto-container">
         <Row className="clearfix">
 
-        <div className="sec-title centered"><h2>IT Equipment BuyBack Benefits<span className="dot">.</span></h2></div>
+        <div className="sec-title centered"><h2>IT Equipment BuyBack Benefits<span className="dot"></span></h2></div>
           {faqsSection.map((allFaqs) => (
             <Faqs key={allFaqs.id} allFaqs={allFaqs} />
           ))}

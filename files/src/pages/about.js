@@ -25,6 +25,7 @@ import TestimonialSectionPage from "@/components/TestimonialsSection/Testimonial
 import TestimonialsSection from "@/components/TestimonialsSection/TestimonialsSection";
 import React from "react";
 import bg from "@/images/zaco/ABOUTUS/ABOUT-US-banner.png";
+import CallToSectionTwo from "@/components/CallToSection/CallToSectionTwo";
 const About = () => {
   return (
     <Layout pageTitle="About Us">
@@ -43,6 +44,8 @@ const About = () => {
       <AgencySection />
       {/* <TestimonialSectionPage /> */}
       <WhyChooseUs />
+      <FunFactSix />
+
       {/* <TeamSectionTwo /> */}
       {/* <SponsorsSectionTwo /> */}
 
@@ -51,7 +54,7 @@ const About = () => {
 
 
       <AboutUSP />
-      <FunFactSix />
+      <CallToSectionTwo className="alternate" />
       <FooterSix />
     </Layout>
   );

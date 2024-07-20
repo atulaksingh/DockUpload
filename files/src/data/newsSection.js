@@ -189,11 +189,11 @@ export const blogEight = {
       text: "Revolutionize your operations with our advanced IT software solutions. Effortlessly streamline processes, enhance efficiency and stay ahead in the digital landscape.",
       admin: "Admin",
       comments: 2,
-      href:'/it-software-solution'
+      href:'https://zacoinfotech.com/'
     },
     {
       id: 3,
-      image: "IT-Asset-Disposition.png",
+      image: "IT-Asset-Disposition.jpg",
       date: "16 sep",
       title: "IT Asset Disposition",
       text: "Turning obsolete into opportunity. Our IT Asset Disposition services offer a seamless, eco-friendly solution for retiring outdated technology responsibly.",
@@ -209,7 +209,7 @@ export const blogEight = {
       text: "Your Gateway to Tech Excellence. Zaco offers a wide range of Servers, Storages and Networking devices from HP, IBM, Sun Oracle, Net App, EMC, Cisco & more.",
       admin: "Admin",
       comments: 2,
-      href:"/store"
+      href:"https://www.zacocomputer.com/store/"
     },
   ],
 };

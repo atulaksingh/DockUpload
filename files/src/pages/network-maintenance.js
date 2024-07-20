@@ -1,6 +1,7 @@
 import AboutSection from "@/components/AboutSection/AboutSection";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import CallToSectionTwo from "@/components/CallToSection/CallToSectionTwo";
+import HeaderSix from "@/components/Header/HeaderSix";
 import HeaderTwo from "@/components/Header/HeaderTwo";
 import MobileMenu from "@/components/Header/MobileMenu";
 import Layout from "@/components/Layout/Layout";
@@ -19,6 +20,7 @@ function networkMaintenance() {
         <Style />
 
         <Style />
+        <HeaderSix />
         <HeaderTwo />
         <MobileMenu />
         <SearchPopup />

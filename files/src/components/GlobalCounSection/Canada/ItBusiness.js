@@ -8,16 +8,16 @@ import { Col, Image, Row } from "react-bootstrap";
 const { images } = aboutSeven;
 
 const ItBusiness = ({ canadaData }) => {
-  const { title, text } = canadaData;
+  const { title, text ,img} = canadaData;
   return (
     <section className="about-seven">
       <div className="auto-container">
         <Row>
           <Col md={12} lg={6} className="animated fadeInLeft">
             <div className="about-seven__images">
-              {images.map((image, i) => (
-                <Image key={i} src={image.src} alt="" />
-              ))}
+              {/* {images.map((image, i) => ( */}
+                <Image  src={img.src} alt="" />
+              {/* ))} */}
             </div>
           </Col>
           <Col md={12} lg={6}>

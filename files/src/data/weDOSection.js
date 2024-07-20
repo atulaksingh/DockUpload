@@ -60,7 +60,7 @@ const weDOSection = {
     {
       id: 1,
       title: "Routine Server Maintenance",
-      text:"We perform regular preventive maintenance tasks, including system updates, hardware health checks, security audits and performance optimization to identify and address potential issues before they impact your server operations"
+      text:"We perform regular preventive maintenance tasks, including system updates, hardware health checks, security audits and performance optimization to identify and address potential issues before they impact your server operations."
     },
     {
       id: 2,
@@ -69,13 +69,13 @@ const weDOSection = {
     },
     {
       id: 3,
-      title: "Backup and Disaster Recovery: ",
+      title: "Backup and Disaster Recovery",
       text:"We offer comprehensive backup and disaster recovery solutions to safeguard your critical data and ensure business continuity in case of unexpected events."
     },
     {
       id: 4,
       title: "Hardware and Software Support",
-      text:"Our team can provide expert IT support for both hardware and software issues, ensuring your servers remain operational and perform at their peak"
+      text:"Our team can provide expert IT support for both hardware and software issues, ensuring your servers remain operational and perform at their peak."
     },
     {
       id: 5,
@@ -107,17 +107,17 @@ const weDOSection = {
     {
       id: 1,
       title: "Server Storage Maintenance Services",
-      text:"Unlock the full potential of your storage infrastructure with Zaco's server storage maintenance solutions. Our team of experienced technicians is dedicated to providing proactive maintenance and timely repairs to minimize downtime and maximize uptime."
+      text:"Unlock the full potential of your storage infrastructure with Zaco's storage maintenance solutions. Our team of experienced technicians is dedicated to providing proactive maintenance and timely solutions to minimize downtime and maximize uptime."
     },
       {
       id: 2,
       title: "Tailored Server Storage Solutions",
-      text:"We recognize that every business has unique enterprise storage requirements. That's why we offer tailored server storage solutions to meet your specific needs. Whether you require additional storage capacity, data migration or performance optimization, we have you covered."
+      text:"We recognize that every business has unique enterprise storage requirements. That's why we offer tailored storage solutions to meet your specific needs. Whether you require additional storage capacity, data migration or performance optimization, we have you covered."
     },
     {
       id: 3,
       title: "Third-Party Storage Maintenance Experts ",
-      text:"Partnering with Zaco for third-party storage maintenance means entrusting your critical data to seasoned professionals. Our extensive in-hand inventory hardware collection sets us apart from other third-party maintenance companies. With a diverse range of equipment readily available, we're uniquely positioned to provide swift and effective solutions to your storage maintenance needs, ensuring that your storage environment remains robust and reliable."
+      text:"Partnering with Zaco for third-party storage maintenance means entrusting your critical data to seasoned professionals. Our extensive in-hand inventory sets us apart from other third-party maintenance companies. With a diverse range of equipment readily available, we're uniquely positioned to provide swift and effective solutions to your storage maintenance needs, ensuring that your storage environment remains robust and reliable."
     },
     
   
@@ -131,7 +131,7 @@ const weDOSection = {
       {
       id: 2,
       title: "Tailored Service Contracts",
-      text:"We believe in flexibility. We customize the service level agreements (SLAs) to meet your unique requirements.This adapts precise alignment with your business needs.."
+      text:"We believe in flexibility. We customize the service level agreements (SLAs) to meet your unique requirements.This adapts precise alignment with your business needs."
     },
     {
       id: 3,
@@ -162,17 +162,17 @@ const weDOSection = {
   ],
   faqs9: [
     {
-      id: 1,
+      id: 4,
       title: "Cost Savings",
       text:"Our solutions are cost-effective compared to maintaining an in-house IT sub-department for IMS. Also, we ensure that the quality is not compromised."
     },
       {
-      id: 2,
+      id: 5,
       title: "Customized SLAs",
       text:"Service Level Agreements (SLAs) can be tailored to meet your specific needs. Enjoy our personalized service and support."
     },
     {
-      id: 3,
+      id: 6,
       title: "Co-location Services ",
       text:"At Zaco, we offer co-location services that are cost-efficient, secure and reliable. Technical Support is from our experts for hardware maintenance (including servers, storage systems, and network equipment."
     },

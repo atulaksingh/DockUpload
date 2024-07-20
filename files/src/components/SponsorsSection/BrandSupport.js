@@ -11,7 +11,7 @@ SwiperCore.use([Autoplay]);
 const options = {
   spaceBetween: 100,
   slidesPerView: 5,
-  autoplay: { delay: 5000 },
+  autoplay: { delay: 1000 },
   breakpoints: {
     0: {
       spaceBetween: 30,
@@ -46,7 +46,7 @@ const BrandSupport = () => {
       <div className="auto-container">
 
         <div className="sec-title-eight text-center">
-          <h2 className="sec-title-eight__title ">Brands we support </h2>
+          <h2 className="sec-title-eight__title ">Brands We Support </h2>
         </div>
         <Swiper {...options} className="thm-swiper__slider py-10">
           <div className="swiper-wrapper flex align-middle justify-center items-center">

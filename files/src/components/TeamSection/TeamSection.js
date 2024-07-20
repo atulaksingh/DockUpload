@@ -56,7 +56,7 @@ const responsive2 = {
 
 const settings = {
   container: ".my-slider-19",
-  loop: false,
+  loop: true,
   lazyload: true,
   navPosition: "bottom",
   mouseDrag: true,
@@ -67,6 +67,9 @@ const settings = {
   gutter: 0,
   autoplayButton: false,
   autoplayButtonOutput: false,
+  // nav: false,
+  speed: 300, // Adjust the speed of the transitions if necessary
+  autoplayTimeout: 1500,
 };
 
 const { title, teams } = teamSection;
@@ -98,7 +101,9 @@ const TeamSection = ({ onePage = false }) => {
               options={{
                 ...settings,
                 responsive: onePage ? responsive2 : responsive1,
-                nav: !onePage,
+                // nav: !onePage,
+                nav: false,
+                
               }}
               ref={listRef}
             >

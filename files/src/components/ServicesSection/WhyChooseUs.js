@@ -20,7 +20,7 @@ const WhyChooseUs = ({ className = "" }) => {
             <div className="inner">
               <div className="sec-title" >
                 <h2 className="" >We Shape IT Support and Services to Perfection</h2>
-                <div className="lower-text">
+                <div className="lower-text ">
                   Through exceptional service and continuous learning, we craft
                   IT hardware solutions perfectly suited to our customers&apos;
                   unique needs. Our highly-trained IT solutions team is
@@ -42,7 +42,7 @@ const WhyChooseUs = ({ className = "" }) => {
               <div className="inner ">
                 <div className="sec-title">
                   <h2>Expert IT Support Services for Your Business</h2>
-                  <div className="lower-text">
+                  <div className="lower-text ">
                     Whether you need assistance with servers, networks, or
                     software, our team of IT hardware experts provide quick
                     remote and on-site IT support services for businesses
@@ -78,7 +78,7 @@ const WhyChooseUs = ({ className = "" }) => {
               <div className="inner">
                 <div className="sec-title">
                   <h2>Remote IT Support for Businesses Globally</h2>
-                  <div className="lower-text">
+                  <div className="lower-text ">
                     No matter where your teams are located, we ensure seamless
                     systems access and remote IT support through secure remote
                     connectivity options. Our virtual support programs provide
@@ -98,7 +98,7 @@ const WhyChooseUs = ({ className = "" }) => {
               <div className="inner ">
                 <div className="sec-title">
                   <h2>Efficient Global IT Support for Businesses</h2>
-                  <div className="lower-text">
+                  <div className="lower-text ">
                     Through flexible Service Level Agreements, we offer
                     comprehensive multi-vendor support packages that protect
                     technology investments around the world. Partner with Zaco

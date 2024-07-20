@@ -4,6 +4,7 @@ import AboutTen from "@/components/AboutSection/AboutTen";
 import PageBanner from "@/components/BannerSection/PageBanner";
 import CallToSectionTwo from "@/components/CallToSection/CallToSectionTwo";
 import FeatureEight from "@/components/FeaturesSection/FeatureEight";
+import HeaderSix from "@/components/Header/HeaderSix";
 import HeaderTwo from "@/components/Header/HeaderTwo";
 import MobileMenu from "@/components/Header/MobileMenu";
 import Layout from "@/components/Layout/Layout";
@@ -22,6 +23,7 @@ function serverMaintenance() {
         <Style />
 
         <Style />
+        <HeaderSix />
         <HeaderTwo />
         <MobileMenu />
         <SearchPopup />

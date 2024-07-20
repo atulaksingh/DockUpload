@@ -40,9 +40,9 @@ export const faqsSection = [
     faqs,
     defaultCurrent: 1,
   },
-  {
-    id: 2,
-    faqs,
-    defaultCurrent: 4,
-  },
+  // {
+  //   id: 2,
+  //   faqs,
+  //   defaultCurrent: 4,
+  // },
 ];

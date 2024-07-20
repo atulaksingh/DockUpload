@@ -18,7 +18,7 @@ const ContactSection = ({ className = "", map = false, form = false }) => {
       <div className="auto-container">
         <div className="sec-title centered">
           <h2>
-            {title} <span className="dot">.</span>
+            {title} 
           </h2>
         </div>
 

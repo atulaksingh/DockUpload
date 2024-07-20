@@ -40,7 +40,7 @@ export const funFactSix = [
   {
     id: 2,
     icon: "flaticon-architect-1",
-    count: 1000,
+    count: 5000,
     text: "Clients",
   },
   {

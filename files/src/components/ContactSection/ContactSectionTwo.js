@@ -22,7 +22,7 @@ const ContactSectionTwo = () => {
             <div className="contact-two__content">
               <div className="sec-title">
                 <h2 className="font-bold">
-                  {title} <span className="dot">.</span>
+                  {title} 
                 </h2>
               </div>
               {/* <div className="contact-two__text px-6">
@@ -35,19 +35,10 @@ const ContactSectionTwo = () => {
 
               {/* <div className="font-semibold  contact-two__text">If the answer to any of the above questions is yes, then you have certainly reached the correct place!</div> */}
               <div className="contact-two__text  mb-2">
-                As technology advances, organizations are often left managing
-                large volumes of aging or obsolete IT equipment that have
-                reached end of life. From desktops and laptops to servers, and
-                networking gear, outdated assets need to be retired properly
-                according to regulations through IT asset disposition (ITAD)
-                services.
+              As technology advances, organizations are often left managing large volumes of aging or obsolete IT equipment that have reached end of life. From servers to storages, and networking gear, outdated assets need to be retired properly according to regulations through IT asset disposition (ITAD) services.
               </div>
               <div className="contact-two__text ">
-                Zaco&apos;s comprehensive IT asset disposition services provide a
-                solution to help clients worldwide safely and sustainably
-                dispose all types of outdated IT assets. With over 15 years of
-                experience in ITAD, we have the expertise and global
-                infrastructure to handle large-scale ITAD projects.
+                            Zaco&apos;s comprehensive IT asset disposition services provide a solution to help clients worldwide safely and sustainably dispose all types of outdated IT assets. With over 15 years of experience in ITAD, we have the expertise and global infrastructure to handle large-scale ITAD projects.
               </div>
               {/* <div className="contact-two__social">
                 {socials.map((icon, i) => (
@@ -78,7 +69,7 @@ const ContactSectionTwo = () => {
                           required
                         />
                       </div>
-                      <div className="field-inner mb-3">
+                      <div className="field-inner ">
                         <input
                           type="text"
                           name="username"
@@ -86,15 +77,7 @@ const ContactSectionTwo = () => {
                           required
                         />
                       </div>
-                      <div className="field-inner mb-3">
-                        <input
-                          type="number"
-                          name="username"
-                          placeholder="Number of Server*"
-                          min="0"
-                          required
-                        />
-                      </div>
+                    
                     </Col>
                     <Col lg={6} md={6} sm={12} className="form-group">
                       <div className="field-inner mb-3">
@@ -114,44 +97,29 @@ const ContactSectionTwo = () => {
                         />
                       </div>
 
-                      <div className="field-inner mb-3">
-                        <input
-                          type="number"
-                          name="username"
-                          placeholder="Number of Networking Devices"
-                          min="0"
-                          required
-                        />
-                      </div>
-                      <div className="field-inner mb-3">
-                        <input
-                          type="number"
-                          name="username"
-                          placeholder="Number of Storages*"
-                          min="0"
-                          required
-                        />
-                      </div>
+                  
+                   
                     </Col>
-                    {/* <Col lg={6} md={6} sm={12} className="form-group">
-                     
-            
-                      <div className="field-inner mb-2">
-                        <input
-                          type="text"
-                          name="username"
-                          placeholder="Others"
-                          required
-                        />
-                      </div>
-                    </Col> */}
+          
+          
+             
                     <Col lg={12} md={12} sm={12} className="form-group">
                       <div className="field-inner">
                         <textarea
                           name="message"
-                          placeholder="Please Mention Your Product Requirements Here"
+                          placeholder="Your Message"
                           required
                         ></textarea>
+                      </div>
+                    </Col>
+                    <Col lg={12} md={12} sm={12} className="">
+                      <div className="field-inner mb-3">
+                        <input
+                          type="file"
+                          name="username"
+                          placeholder="Number of Networking Devices"
+                          required
+                        />
                       </div>
                     </Col>
                     <Col lg={12} md={12} sm={12} className="form-group">

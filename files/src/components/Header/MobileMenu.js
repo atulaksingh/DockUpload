@@ -33,7 +33,8 @@ const MobileMenu = ({ onePage = false }) => {
 
         <nav className="mobile-nav__container">
           <div
-            className="collapse navbar-collapse show clearfix"
+            // className="collapse navbar-collapse show clearfix"
+            className=" navbar-collapse show clearfix"
             id="navbarSupportedContent"
           >
             <ul className="navigation clearfix">

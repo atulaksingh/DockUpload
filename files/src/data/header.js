@@ -220,12 +220,12 @@ const navItems = [
     id: 6,
     name: "ITAD Services",
     href: "/it-equipment-buyback",
-    subNavItems: [
-      { id: 1, name: "IT Equipment Buyback", href: "/it-equipment-buyback" },
-      // { id: 2, name: "Server BuyBack Dubai", href: "/server-buyback" },
-      // { id: 3, name: "Cart Page", href: "/cart" },
-      // { id: 4, name: "Checkout Page", href: "/checkout" },
-    ],
+    // subNavItems: [
+    //   { id: 1, name: "IT Equipment Buyback", href: "/it-equipment-buyback" },
+    //   { id: 2, name: "Server BuyBack Dubai", href: "/server-buyback" },
+    //   { id: 3, name: "Cart Page", href: "/cart" },
+    //   { id: 4, name: "Checkout Page", href: "/checkout" },
+    // ],
   },
   // {
   //   id: 7,
@@ -240,7 +240,7 @@ const navItems = [
   {
     id: 8,
     name: "Contact Us",
-    href: "/contact-2",
+    href: "/contact",
     // subNavItems: [
     //   { id: 1, name: "Contact 01", href: "/contact-2" },
     //   { id: 2, name: "Contact 02", href: "/contact-2", isNew: true },
@@ -272,9 +272,9 @@ export const socials = [
 ];
 
 const headerData = {
-  title: "Linoor - DIgital Agency NextJS Template",
-  title2: "Welcome to Creative Buinsess Agency.",
-  title3: "Welcome to Amazing Consulting Agency.",
+  title: "Refurbished Servers In India From DELL, HPE & IBM",
+  title2: "Refurbished Servers In India From DELL, HPE & IBM",
+  title3: "Refurbished Servers In India From DELL, HPE & IBM",
   logo1,
   logo2,
   logo3,
@@ -289,7 +289,7 @@ const headerData = {
   navItemsTwo,
   address: "Suite 20 Golden Street USA",
   phone: "666 888 0000",
-  phone2: "+ 92 666 888 0000",
+  phone2: "+ 44 203 815 8028",
   email: "needhelp@linoor.com",
   blog:"Blog",
   abb:"Case Studies",

@@ -21,14 +21,14 @@ const CallToSectionTwo = ({
             <Link href="/contact" passHref>
               <div className={`theme-btn ${btnClassName}`}>
                 <i className="btn-curve"></i>
-                <span className="btn-title">Contact with us</span>
+                <span className="btn-title">Contact us</span>
               </div>
             </Link>
           </div>
           
         </div>
 
-        <h3 className="text-sm   text-white"> Our team of experts is here and will be happy to help you.<br /> Send us a message or give us a call depending on your requirements.</h3>
+        <h3 className="text-sm   text-white"> Our team of experts is here and will be happy to help you.<br /> Depending on your requirements.</h3>
 
       </div>
     </div>

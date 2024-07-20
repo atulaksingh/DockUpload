@@ -1,4 +1,4 @@
-import image from "@/images/zaco/ABOUTUS/BEST-DESIGN.png";
+import image from "@/images/zaco/ABOUTUS/best.jpg";
 
 const agencySection = {
   image,
@@ -21,11 +21,11 @@ const agencySection = {
   tabContents: [
     {
       id: "tab-1",
-      text: "Our Vision is to be the most trusted advisor for all technology needs of our clients. We aim to deliver best-in-class hardware and software solutions that create value for businesses.",
+      text: "Zaco’s Mission is to simplify IT for our customers. We take care of all complexities so that our clients can focus on their core business. Through our team of experts and partnerships with top brands, we offer one-stop solutions tailored to specific needs.",
     },
     {
       id: "tab-2",
-      text: "Zaco’s Mission is to simplify IT for our customers. We take care of all complexities so that our clients can focus on their core business. Through our team of experts and partnerships with top brands, we offer one-stop solutions tailored to specific needs.",
+      text: "Our Vision is to be the most trusted advisor for all technology needs of our clients. We aim to deliver best-in-class hardware and software solutions that create value for businesses.",
     },
     {
       id: "tab-3",

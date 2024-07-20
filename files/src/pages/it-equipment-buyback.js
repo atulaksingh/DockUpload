@@ -4,6 +4,7 @@ import CallToSectionTwo from '@/components/CallToSection/CallToSectionTwo'
 import ContactSectionTwo from '@/components/ContactSection/ContactSectionTwo'
 import FaqsSection from '@/components/FaqsSection/FaqsSection'
 import FeatureEight from '@/components/FeaturesSection/FeatureEight'
+import HeaderSix from '@/components/Header/HeaderSix'
 import HeaderTwo from '@/components/Header/HeaderTwo'
 import MobileMenu from '@/components/Header/MobileMenu'
 import HistoryTimeline from '@/components/HistorySection/HistoryTimeline'
@@ -19,7 +20,7 @@ function itequipmentbuyback() {
 
             <Layout pageTitle="Services">
                 <Style />
-
+                <HeaderSix />
                 <HeaderTwo />
                 <MobileMenu />
                 <SearchPopup />

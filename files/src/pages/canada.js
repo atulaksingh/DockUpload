@@ -22,25 +22,45 @@ import SponsorEight from "@/components/SponsorsSection/SponsorEight";
 import TestimonialsEight from "@/components/TestimonialsSection/TestimonialsEight";
 import VideoSeven from "@/components/VideoSection/VideoSeven";
 import weDOSection from "@/data/weDOSection";
+import image1 from "../assets/images/zaco/CANADA/can-home-1.jpg";
+import image2 from "../assets/images/zaco/CANADA/can-home-2.jpg";
+import image3 from "../assets/images/zaco/CANADA/can-home-3.jpg";
+import image4 from "../assets/images/zaco/CANADA/can-hom-4.jpg";
+import image5 from "../assets/images/zaco/CANADA/can-home-5.jpg";
+import image6 from "../assets/images/zaco/CANADA/can-home-6.jpg";
+import contact from "../assets/images/zaco/CANADA/contact-can-1.jpg";
 import React from "react";
+const bannerData={
+  bg:image1,
+  title:"Reach the Limits with Consulting Agency."
+  };
 const CanadaData = {
   "title": "Your IT Business Solutions Partner - Zaco",
-  "text": "At Zaco, we understand the unique challenges and opportunities that businesses face in today's rapidly evolving digital landscape. As your dedicated IT solutions company, we are committed to empowering your success through innovative technology solutions tailored to your needs."
+  "text": "At Zaco, we understand the unique challenges and opportunities that businesses face in today's rapidly evolving digital landscape. As your dedicated IT solutions company, we are committed to empowering your success through innovative technology solutions tailored to your needs.",
+  "img":image2
 };
 const CanadaDataITS = {
   "title": "Comprehensive IT Solutions in Canada",
-  "text": "From cutting-edge hardware to bespoke software solutions, Zaco offers a comprehensive suite of IT solutions designed to drive efficiency, productivity, and growth for your business. Whether you're a small startup or a large enterprise, our team of IT experts is here to help you harness the full potential of technology to achieve your business objectives."
+  "text": "From cutting-edge hardware to bespoke software solutions, Zaco offers a comprehensive suite of IT solutions designed to drive efficiency, productivity, and growth for your business. Whether you're a small startup or a large enterprise, our team of IT experts is here to help you harness the full potential of technology to achieve your business objectives.",
+  "img":image3
 };
 const CanadaDataTIT = {
   "title": "Trusted IT Solutions Provider in Canada",
-  "text": "With years of experience and a proven track record of success, Zaco has earned a reputation as a trusted IT solutions provider in Canada and beyond. Our commitment to excellence, integrity and customer satisfaction sets us apart, ensuring that you receive the highest quality service and support every step of the way."
+  "text": "With years of experience and a proven track record of success, Zaco has earned a reputation as a trusted IT solutions provider in Canada and beyond. Our commitment to excellence, integrity and customer satisfaction sets us apart, ensuring that you receive the highest quality service and support every step of the way.",
+  "img":image4
 };
 const CanadaDataCard4 = {
   "title": "Managed IT Services: Your Success Partner in Canada",
-  "text": "Zaco Computers provides cutting-edge managed IT services, offering proactive monitoring, maintenance and support for your entire IT infrastructure. Our team of dedicated experts ensures your systems are always optimized, allowing you to focus on business growth. With predictable pricing and scalable solutions, we prioritize cost efficiency and adaptability. Partnering with us means gaining access to robust security measures, and safeguarding your data from cyber threats. From proactive maintenance to strategic planning, we handle IT complexities, empowering you to drive your business forward. With Zaco as your trusted managed IT solutions provider, you can enjoy peace of mind knowing your technology is in capable hands. Experience unparalleled support and reliability with Zaco Computers – your pathway to seamless IT management and business success."
+  "text": "Zaco Computers provides cutting-edge managed IT services, offering proactive monitoring, maintenance and support for your entire IT infrastructure. Our team of dedicated experts ensures your systems are always optimized, allowing you to focus on business growth. With predictable pricing and scalable solutions, we prioritize cost efficiency and adaptability. Partnering with us means gaining access to robust security measures, and safeguarding your data from cyber threats. From proactive maintenance to strategic planning, we handle IT complexities, empowering you to drive your business forward. With Zaco as your trusted managed IT solutions provider, you can enjoy peace of mind knowing your technology is in capable hands. Experience unparalleled support and reliability with Zaco Computers – your pathway to seamless IT management and business success.",
+  "img":image5
 };
 const {  CanadaWhyChooseData } =
   weDOSection;
+  const footerData={
+    "address":"135 Lower Sherbourne Street, M5A 1Y4, Toronto, ON.",
+    "number":"+1 587 435 3187 ",
+    "email":"info@zacocomputer.com"
+  }
 function canada() {
   return (
     <>
@@ -59,15 +79,15 @@ function canada() {
         <HeaderEight />
         <MobileMenu />
         <SearchPopup />
-        <SliderEight />
+        <SliderEight bannerData={bannerData} />
         <ItBusiness canadaData={CanadaData}  />
         <ItSolution CanadaDataITS={CanadaDataITS}/>
         <TrustedIt CanadaDataTIT={CanadaDataTIT}/>
         <CanadaCard4 CanadaDataCard4={CanadaDataCard4}/>
-        <WhyChooseUs title={"Why Choose Zaco?"} CanadaWhyChooseData={CanadaWhyChooseData}/>
-        <CanadaMap />
+        <WhyChooseUs title={"Why Choose Zaco?"} CanadaWhyChooseData={CanadaWhyChooseData} img={image6}/>
+        <CanadaMap contact={contact}/>
         
-        <FooterEight />
+        <FooterEight footerData={footerData} />
       </Layout>
     </>
   );

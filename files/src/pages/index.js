@@ -60,6 +60,7 @@ const Home6 = () => {
 </div> */}
       {/* <DiscoverSection /> */}
       <BlogEight />
+      <AboutSeven />
       <AboutSix />
       <FunFactsOne />
       <TrustedSection />

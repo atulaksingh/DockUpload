@@ -18,13 +18,14 @@ const StorageIntroduction = () => {
       <div className="auto-container">
         <Row className="clearfix">
           <Col xl={6} lg={12} md={12} sm={12} className="image-column">
-            <div className="inner">
-              <div className="image-block animated fadeInLeft">
+            <div className="">
+              {/* <div className="image-block animated fadeInLeft"> */}
+              <div className=" animated fadeInLeft">
                 <Image src={serverStorageimg1.src} alt="" />
               </div>
-              <div className="image-block animated fadeInUp">
+              {/* <div className="image-block animated fadeInUp">
                 <Image src={serverStorageimg2.src} alt="" />
-              </div>
+              </div> */}
             </div>
           </Col>
           <Col xl={6} lg={12} md={12} sm={12} className="text-column">
@@ -53,7 +54,8 @@ const StorageIntroduction = () => {
                   </span>
                 </div>
               </div> */}
-              <div className="link-box">
+              {/* <div className="link-box"> */}
+              <div className="">
                 <Link href="/about" passHref>
                   <div className="theme-btn btn-style-one">
                     <i className="btn-curve"></i>

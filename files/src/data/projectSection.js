@@ -136,25 +136,25 @@ export const projectEight = {
       id: 1,
       image: "INDIA.jpg",
       title: "India",
-      href:"/contact-2"
+      href: "/contact-2",
     },
     {
       id: 2,
       image: "UK.jpg",
       title: "United Kingdom",
-      href:"/contact-2"
+      href: "/contact-2",
     },
     {
       id: 3,
       image: "UAE.jpg",
       title: "UAE ",
-      href:"/contact-2"
+      href: "/contact-2",
     },
     {
       id: 4,
       image: "CANADA.jpg",
       title: "Canada",
-      href:"/contact-2"
+      href: "/contact-2",
     },
     // {
     //   id: 3,
@@ -187,32 +187,37 @@ export const projectEight = {
 
 export const projectUSP = {
   tagline: "Recent Cases",
-  title: "Our USPs",
+  title: "Unique Selling Propositions ",
   projects: [
     {
       id: 1,
       image: "Server-Maintenance.png",
       title: "Server Maintenance",
+      href: "/server-maintenance",
     },
     {
       id: 2,
       image: "Storage-Maintenance.png",
       title: "Storage Maintenance",
+      href: "/storage-maintenance",
     },
     {
       id: 3,
       image: "Network-Maintenance.png",
       title: "Network Maintenance",
+      href: "/network-maintenance",
     },
     {
       id: 4,
       image: "Server-Rental.png",
       title: "Rental Services",
+      href: "/rental-services",
     },
     {
       id: 5,
       image: "infrastructure-managed-services.png",
       title: "Infrastructure Managed Services",
+      href: "/ims",
     },
     // {
     //   id: 5,

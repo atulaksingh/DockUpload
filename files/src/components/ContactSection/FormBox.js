@@ -14,7 +14,7 @@ const FormBox = ({ inputs = [] }) => {
     <div className="form-box">
       <div className="sec-title">
         <h2>
-          Write Us a Message<span className="dot">.</span>
+          Write Us a Message
         </h2>
       </div>
       <div className="default-form">

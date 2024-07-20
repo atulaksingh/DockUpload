@@ -38,7 +38,6 @@ const options = {
 };
 
 const { tagline, title, projects } = projectUSP;
-
 const AboutUSP = () => {
   return (
     <div className="project-eight">
@@ -50,7 +49,7 @@ const AboutUSP = () => {
         </div>
         <Swiper {...options} className="thm-swiper__slider">
           <div className="swiper-wrapper" style={{borderRadius:"100px"}}>
-            {projects.map(({ id, image, title }) => (
+            {projects.map(({ id, image, title,href }) => (
               <SwiperSlide key={id}>
                 <div className="project-eight__item">
                   <Image
@@ -61,13 +60,13 @@ const AboutUSP = () => {
                     alt=""
                   />
                   <div className="project-eight__content">
-                    <Link href="/portfolio-single" passHref>
+                    <Link href={href} passHref>
                       <div className="project-eight__link">
                         <i className="flaticon-right-arrow"></i>
                       </div>
                     </Link>
                     <h3 className="project-eight__title">
-                      <Link href="/portfolio-single" passHref>{title}</Link>
+                      <Link href={href} passHref>{title}</Link>
                     </h3>
                   </div>
                 </div>

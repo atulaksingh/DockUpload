@@ -10,7 +10,8 @@ const {
 } = aboutEleven;
 
 const TrustedIt = ({CanadaDataTIT}) => {
-  const { title, text } = CanadaDataTIT;
+  const { title, text ,img} = CanadaDataTIT;
+  // console.log("hhh",img)
   const [countStart, setCountStart] = useState(false);
 
   const onVisibilityChange = (isVisible) => {
@@ -25,16 +26,16 @@ const TrustedIt = ({CanadaDataTIT}) => {
         <Row>
           <Col lg={6}>
             <div className="about-eleven__images animated fadeInLeft">
-              {images.map((image, i) => (
+              {/* {images.map((image, i) => ( */}
                 <Image
-                  key={i}
-                  src={require(`@/images/zaco/${image}`).default.src}
+                  // key={i}
+                  src={img.src}
                   alt=""
                 />
-              ))}
+              {/* ))} */}
             </div>
           </Col>
-          <Col lg={6}>
+          <Col lg={6} className="my-auto">
             <div className="about-eleven__content">
               <div className="sec-title-eight text-start">
                 {/* <div className="sec-title-eight__text">{tagline}</div> */}

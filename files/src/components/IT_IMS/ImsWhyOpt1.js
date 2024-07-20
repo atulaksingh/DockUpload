@@ -19,7 +19,7 @@ function ImsWhyOpt1() {
   };
   return (
     <>
-      <section className="we-do-section">
+      <section className="we-do-section mb-[90px]">
         <div className="auto-container">
         
  

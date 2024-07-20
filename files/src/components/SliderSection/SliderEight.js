@@ -13,14 +13,14 @@ const options = {
   autoplay: { delay: 5000 },
 };
 
-const SliderEight = () => {
+const SliderEight = ({bannerData}) => {
   return (
     <div className="slider-eight">
       <Swiper {...options} className="thm-swiper__slider">
         <div className="swiper-wrapper">
-          {sliderEight.map((slide) => (
-            <SingleSliderEight key={slide} slide={slide} />
-          ))}
+          {/* {sliderEight.map((slide) => ( */}
+            <SingleSliderEight  slide={bannerData} />
+          {/* ))} */}
         </div>
       </Swiper>
     </div>
