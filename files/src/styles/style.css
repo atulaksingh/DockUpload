@@ -11107,7 +11107,8 @@ height: 60px;
 
 .page-banner h1 {
   position: relative;
-  font-size: 80px;
+  /* font-size: 80px; */
+  font-size: 50px;
   color: #ffffff;
   line-height: 0.9em;
   font-weight: 600;
@@ -16773,7 +16774,7 @@ height: 60px;
 .history-timeline__text {
   margin: 0;
   color: var(--thm-text);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 29px;
   margin-top: 12px;
 }
@@ -21770,7 +21771,7 @@ height: 60px;
 
 .blog-eight__content {
   background-color: #fff;
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -22881,10 +22882,13 @@ height: 60px;
 
 @media (min-width: 1200px) {
   .slider-eight__title {
-    font-size: 80px;
+    /* font-size: 80px; */
+    font-size: 70px;
     max-width: 647px;
     margin-bottom: 50px;
     margin-top: 25px;
+    /* ///aadd new css*/
+    /* right: 70px;  */
   }
 }
 

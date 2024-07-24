@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import VisibilitySensor from "react-visibility-sensor";
 import TextSplit from "../Reuseable/TextSplit";
-import bg from "@/images/zaco/IMS/IMSWhy-2.png";
+import bg from "@/images/zaco/IMS/ppl-laughing.jpg";
 const { title2, featuredImage, text, barTitle, barPercent, faqs9, faqs8 } =
   weDOSection;
 function ImsWhyOpt1() {
@@ -26,7 +26,7 @@ function ImsWhyOpt1() {
 
 
           <Row className="clearfix">
-          <Col lg={6} md={12} sm={12} className="right-col">
+          <Col lg={6} md={12} sm={12} className="right-col my-auto">
               <div className="inner">
                 <div className="faq-box">
                   <ul className="accordion-box clearfix">
@@ -67,7 +67,7 @@ function ImsWhyOpt1() {
                    bg.src
                   }
                   alt=""
-                  className="h-80 w-full"
+                  className="h-[21rem] w-full"
                 />
               </div>
             </Col>

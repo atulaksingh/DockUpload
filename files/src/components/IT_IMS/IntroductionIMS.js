@@ -35,8 +35,8 @@ const IntroductionIMS = () => {
                   <TextSplit text="IT Infrastructure Managed Services " />
                   <span className="dot"></span>
                 </div>
-                <div className="text clearfix mt-4 text-justify">In today’s fast-paced business environment, a robust and well-managed IT infrastructure is essential for organizations to thrive. At Zaco Computers Private Limited, we specialize in providing comprehensive<strong> IT Infrastructure Managed Services (IMS)</strong> that empower businesses to optimize resources.</div>
-                <div className="text clearfix mt-4 text-justify">Our IMS covers a wide spectrum of proactive and strategic activities aimed at administering and optimizing your organization’s data and information infrastructure. A well-managed IT infrastructure isn’t just about hardware and software—it’s about empowering your business to thrive in the digital age.</div>
+                <div className="text clearfix mt-4 ">In today’s fast-paced business environment, a robust and well-managed IT infrastructure is essential for organizations to thrive. At Zaco Computers Private Limited, we specialize in providing comprehensive<strong> IT Infrastructure Managed Services (IMS)</strong> that empower businesses to optimize resources.</div>
+                <div className="text clearfix mt-4 ">Our IMS covers a wide spectrum of proactive and strategic activities aimed at administering and optimizing your organization’s data and information infrastructure. A well-managed IT infrastructure isn’t just about hardware and software-it’s about empowering your business to thrive in the digital age.</div>
               </div>
         
               <div className="">

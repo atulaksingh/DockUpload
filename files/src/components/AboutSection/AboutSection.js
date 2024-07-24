@@ -33,7 +33,7 @@ const AboutSection = () => {
                   <span className="dot"></span>
                 </div>
                 {/* <div className="lower-text">{text1}</div> */}
-                <div className="text clearfix mt-4 text-justify">{text1}</div>
+                <div className="text clearfix mt-4 ">{text1}</div>
               </div>
               {/* <div className="text">
                 <div>{text2}</div>

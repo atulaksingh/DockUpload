@@ -17,7 +17,13 @@ import React from 'react'
 import StorageIntroduction from '@/components/storage_maintanance/StorageIntroduction'
 import StorageService from '@/components/storage_maintanance/StorageService'
 import StorageWhyZaco from '@/components/storage_maintanance/StorageWhyZaco'
-
+import SliderEight from '@/components/SliderSection/SliderEight'
+import image6 from "../assets/images/zaco/STORAGE-MAINTENANCE-SERVICES/storage-maintanace-services-1.jpg";
+import HeaderSix from '@/components/Header/HeaderSix'
+const bannerData={
+  bg:image6,
+  title:"Expert Storage Maintenance Solutions - Maximizing Performance and Reliability."
+  };
 function storageMaintenance() {
   return (
     <>
@@ -25,10 +31,12 @@ function storageMaintenance() {
         <Style />
 
         <Style />
+        <HeaderSix />
         <HeaderTwo />
         <MobileMenu />
         <SearchPopup />
-        <PageBanner title="Storage Maintenance Services" />
+        {/* <PageBanner title="Expert Storage Maintenance Solutions - Maximizing Performance and Reliability" /> */}
+        <SliderEight bannerData={bannerData}/>
         <StorageIntroduction />
         <StorageService />
         <StorageWhyZaco />

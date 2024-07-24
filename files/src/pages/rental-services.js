@@ -14,7 +14,12 @@ import StorageIntroduction from '@/components/storage_maintanance/StorageIntrodu
 import StorageService from '@/components/storage_maintanance/StorageService'
 import StorageWhyZaco from '@/components/storage_maintanance/StorageWhyZaco'
 import React from 'react'
-
+import image6 from "../assets/images/zaco/SERVER-RENTAL-SERVICES/server-rental-services-2.jpg";
+import SliderEight from '@/components/SliderSection/SliderEight'
+const bannerData={
+  bg:image6,
+  title:"Reliable, Scalable Server Rental Services Tailored to your Global Business Needs."
+  };
 function rentalServices() {
   return (
    <>
@@ -26,7 +31,8 @@ function rentalServices() {
         <HeaderTwo />
         <MobileMenu />
         <SearchPopup />
-        <PageBanner title="Server Rental Services" />
+        {/* <PageBanner title="Reliable, Scalable Server Rental Services Tailored to your Global Business Needs." /> */}
+        <SliderEight bannerData={bannerData}/>
         <RantalIntro />
         <RantleBenefit />
         <RantleWhy />

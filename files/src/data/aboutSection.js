@@ -12,7 +12,7 @@ import networkmaintenanceimg1 from "@/images/zaco/NETWORK-SUPPORT-AND-MAINTENANC
 import networkmaintenanceimg2 from "@/images/zaco/NETWORK-SUPPORT-AND-MAINTENANCE/YOUR-TRUSTED-PARTNER-FOR-STORAGE-MAINTENANCE-SERVICES-2.png";
 import image3 from "@/images/resource/featured-image-15.jpg";
 // import image2 from "@/images/resource/featured-image-2.jpg";
-import rentalBenefit from "@/images/zaco/SERVER-RENTAL-SERVICES/Benefits.png";
+import rentalBenefit from "@/images/zaco/SERVER-RENTAL-SERVICES/benefits.jpg";
 import image12 from "@/images/zaco/SERVER-MAINTENANCE-SERVICES/Benefits-of-Choosing-Zaco-Computers-for-Server-Maintenance.jpg";
 import serverStorageimg3 from "@/images/zaco/STORAGE-MAINTENANCE-SERVICES/Why-Choose-Zaco-for-Storage-Maintenance.png";
 import image11 from "@/images/update-01-10-2021/resources/about-11-1-3.jpg";

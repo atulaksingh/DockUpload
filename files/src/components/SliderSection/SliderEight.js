@@ -15,7 +15,7 @@ const options = {
 
 const SliderEight = ({bannerData}) => {
   return (
-    <div className="slider-eight">
+    <div className="slider-eight mix-blend-multiply bg-black">
       <Swiper {...options} className="thm-swiper__slider">
         <div className="swiper-wrapper">
           {/* {sliderEight.map((slide) => ( */}

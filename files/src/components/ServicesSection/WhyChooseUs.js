@@ -26,7 +26,7 @@ const WhyChooseUs = ({ className = "" }) => {
                   unique needs. Our highly-trained IT solutions team is
                   committed to delivering an unmatched customer experience while
                   also pursuing new skills and knowledge that allow us to
-                  develop ever more innovative solutions over time. When you
+                  develop even more innovative solutions over time. When you
                   partner with Zaco, you gain more than just reliable IT support
                   services - you gain experts dedicated to optimizing your
                   systems and processes to their fullest potential.

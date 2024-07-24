@@ -9,6 +9,12 @@ export const historyTimeline = [
         title: "Request a Quote",
         text: "Submit details of the equipment for IT asset disposition through our online form or contact a representative. We will provide a customized quote for our ITAD services within 1-2 business days.",
       },
+      {
+        id: 3,
+        date: "20 April 2016",
+        title: "IT Asset Evaluation",
+        text: "Our certified technicians will then inspect the assets either on-site or remotely to assess each item's condition and data security requirements. A detailed inventory report will then be issued and shared.",
+      },
    
       {
         id: 2,
@@ -16,24 +22,14 @@ export const historyTimeline = [
         title: "Secure Data Erasure",
         text: "Using (Environmental Protection Agency) EPA-approved methods, we ensure all customer data and sensitive information is destroyed beyond forensic recovery.",
       },
-      {
-        id: 3,
-        date: "20 April 2016",
-        title: "Asset Processing: (just trying something new. optional)",
-        text: "Valuable parts may be reused. Functional assets are refurbished and resold through our global remarketing program. Non-reusable items are responsibly recycled through our ITAD services.",
-      },
+  
     ],
   },
   {
     id: 2,
     year: 2016,
     items: [
-      {
-        id: 1,
-        date: "20 April 2016",
-        title: "Asset Processing: (just trying something new. optional)",
-        text: "Valuable parts may be reused. Functional assets are refurbished and resold through our global remarketing program. Non-reusable items are responsibly recycled through our ITAD services.",
-      },
+     
       {
         id: 2,
         date: "16 May 2016",

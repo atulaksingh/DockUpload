@@ -19,10 +19,10 @@ console.log("bg",bg)
           </div>
           <h2 className="slider-eight__title">{title}</h2>
           <div className="slider-eight__btns">
-            <Link href="/"   className="slider-eight__btn slider-eight__btn--two thm-btn__eight">
+            {/* <Link href="/"   className="slider-eight__btn slider-eight__btn--two thm-btn__eight">
             Contact Now
 
-            </Link>
+            </Link> */}
             {/* <div
               className="slider-eight__btn slider-eight__btn--two thm-btn__eight"
             >

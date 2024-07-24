@@ -15,7 +15,12 @@ import Card1 from "@/components/server_maintenance/Card1";
 import Card2 from "@/components/server_maintenance/Card2";
 import IHSS from "@/components/service_Card/IHSS";
 import React from "react";
-
+import SliderEight from "@/components/SliderSection/SliderEight";
+import image6 from "../assets/images/zaco/SERVER-MAINTENANCE-SERVICES/11.jpg";
+const bannerData={
+  bg:image6,
+  title:"Your Trusted Partner for Server Maintenance Services."
+  };
 function serverMaintenance() {
   return (
     <>
@@ -27,7 +32,8 @@ function serverMaintenance() {
         <HeaderTwo />
         <MobileMenu />
         <SearchPopup />
-        <PageBanner title="Server Maintenance Services" />
+        {/* <PageBanner title="Your Trusted Partner for Server Maintenance Services." /> */}
+        <SliderEight bannerData={bannerData}/>
         <AboutSection />
         <Card1 />
         <AboutTen />

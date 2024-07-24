@@ -26,6 +26,14 @@ import TestimonialsSection from "@/components/TestimonialsSection/TestimonialsSe
 import React from "react";
 import bg from "@/images/zaco/ABOUTUS/ABOUT-US-banner.png";
 import CallToSectionTwo from "@/components/CallToSection/CallToSectionTwo";
+import BannerSectionFour from "@/components/BannerSection/BannerSectionFour";
+import SliderSeven from "@/components/SliderSection/SliderSeven";
+import SliderEight from "@/components/SliderSection/SliderEight";
+import image6 from "../assets/images/zaco/about-us-1.jpg";
+const bannerData={
+  bg:image6,
+  title:"Your Global Partner for Cutting-Edge IT Infrastructure Solutions."
+  };
 const About = () => {
   return (
     <Layout pageTitle="About Us">
@@ -34,7 +42,12 @@ const About = () => {
       <HeaderTwo/>
       <MobileMenu />
       <SearchPopup />
-      <PageBanner title="About Us"/>
+      {/* <PageBanner title="Your Global Partner for Cutting-Edge IT Infrastructure Solutions."/> */}
+  
+
+      <SliderEight bannerData={bannerData}/>
+
+
       {/* <PageBanner title="About Us" BnImage={bg}/> */}
       {/* <DiscoverSection ShowTitle={false} /> */}
       <FeaturedSection className="featured-section__about-two" />

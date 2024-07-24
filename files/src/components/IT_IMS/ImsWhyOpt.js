@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import VisibilitySensor from "react-visibility-sensor";
 import TextSplit from "../Reuseable/TextSplit";
-import bg from "@/images/zaco/IMS/IMSWhy-1.png";
+import bg from "@/images/zaco/IMS/four.jpg";
 const { title2, featuredImage, text, barTitle, barPercent, faqs9, faqs8 } =
   weDOSection;
 function ImsWhyOpt() {
@@ -17,7 +17,7 @@ function ImsWhyOpt() {
   };
   return (
     <>
-      <section className="we-do-section1">
+      <section className="we-do-section1 pt-10">
         <div className="auto-container">
           <div className="sec-title-eight text-center">
             <h2 className="sec-title-eight__title pb-14">
@@ -37,7 +37,7 @@ function ImsWhyOpt() {
                 />
               </div>
             </Col>
-            <Col lg={6} md={12} sm={12} className="right-col">
+            <Col lg={6} md={12} sm={12} className="right-col my-auto">
               <div className="inner">
                 <div className="faq-box">
                   <ul className="accordion-box clearfix">

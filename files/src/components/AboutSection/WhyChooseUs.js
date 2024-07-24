@@ -67,7 +67,7 @@ const WhyChooseUs = (
           >
             <div className="inner">
               <div className="info">
-                <div className="name">Overall Software Solution Provider to Overall IT Solution Provider</div>
+                <div className="name">Overall IT Solution Provider</div>
               </div>
               <div className="text">
                 Zaco is a complete IT solutions service provider. We work

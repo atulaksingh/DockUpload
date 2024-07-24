@@ -15,7 +15,12 @@ import WeDOSection from "@/components/WeDOSection/WeDOSection";
 import WeWorkSection from "@/components/WeWorkSection/WeWorkSection";
 import IHSS from "@/components/service_Card/IHSS";
 import React from "react";
-
+import image6 from "../assets/images/zaco/IT-hardware-solutions-1.jpg";
+import SliderEight from "@/components/SliderSection/SliderEight";
+const bannerData={
+  bg:image6,
+  title:"Empowering Businesses Worldwide with Reliable IT Hardware and Expert Support."
+  };
 function ithardwaresolution() {
   return (
     <>
@@ -27,7 +32,8 @@ function ithardwaresolution() {
         <HeaderTwo />
         <MobileMenu />
         <SearchPopup />
-        <PageBanner title="Global IT Hardware Solutions and Support" />
+        {/* <PageBanner title="Empowering Businesses Worldwide with Reliable IT Hardware and Expert Support." /> */}
+        <SliderEight bannerData={bannerData}/>
         <IHSS />
         <AboutMeOne />
 

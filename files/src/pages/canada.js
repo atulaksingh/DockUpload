@@ -26,7 +26,7 @@ import image1 from "../assets/images/zaco/CANADA/can-home-1.jpg";
 import image2 from "../assets/images/zaco/CANADA/can-home-2.jpg";
 import image3 from "../assets/images/zaco/CANADA/can-home-3.jpg";
 import image4 from "../assets/images/zaco/CANADA/can-hom-4.jpg";
-import image5 from "../assets/images/zaco/CANADA/can-home-5.jpg";
+import image5 from "../assets/images/zaco/CANADA/about-10-1-1.jpg";
 import image6 from "../assets/images/zaco/CANADA/can-home-6.jpg";
 import contact from "../assets/images/zaco/CANADA/contact-can-1.jpg";
 import React from "react";

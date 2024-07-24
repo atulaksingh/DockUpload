@@ -5,7 +5,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import TextSplit from "../Reuseable/TextSplit";
 import { Bg } from "react-flags-select";
 import bg from "@/images/zaco/IMS/VMware.png";
-import bg1 from "@/images/zaco/IMS/IMSINTRO-11.png";
+import bg1 from "@/images/zaco/IMS/new.jpg";
 const { title2, featuredImage, text, barTitle, barPercent, faqs2, faqs7 } =
   weDOSection;
 function ImsWhyChosse() {
@@ -41,7 +41,7 @@ function ImsWhyChosse() {
             <Col lg={6} md={12} sm={12} className="right-col">
               <div className="inner">
                 <div className="faq-box">
-                  <div className="text text-justify">
+                  <div className="text ">
                     Unlock the full potential of your IT infrastructure with our
                     dedicated team of IT hardware experts. At Zaco, we bring a
                     wealth of experience along with our rich expertise. We are
@@ -49,7 +49,7 @@ function ImsWhyChosse() {
                     Seceon (Cyber security solutions) and Veeam (Backup
                     solution).
                   </div>
-                  <div className="text text-justify">
+                  <div className="text ">
                     Our portfolio encompasses a wide range of diverse projects,
                     including long-term, short-term and one-time solutions.
                     These range from VMware vSphere - Virtualization, Cloud
@@ -71,13 +71,13 @@ function ImsWhyChosse() {
 
           <Row className="clearfix lg:my-10">
             
-            <Col lg={6} md={12} sm={12} className="right-col mt-2">
+            <Col lg={6} md={12} sm={12} className="right-col  my-auto">
               <div className="inner">
-                <div className="faq-box">
-                  <div className="text text-justify">
+                <div className="faq-box my-auto">
+                  <div className="text ">
                   Our Cybersecurity solution prevents <strong>99% of cyberattacks</strong>. Your systems need to be security-ready for Ransomware, Trojans, etc. If your system is not secured with the required solution, it might cost you dearly.
                   </div>
-                  <div className="text text-justify">
+                  <div className="text ">
                   We provide a one-stop solution which is a complete IT Infrastructure Management Solution in terms of co-locating servers (including maintenance services) with managed services of the above-mentioned software. The entire hardware and software management responsibility is on us.
                   </div>
                 </div>
@@ -90,7 +90,7 @@ function ImsWhyChosse() {
                    bg1.src
                   }
                   alt=""
-                  className="h-72 w-full"
+                  className="h-[19rem] w-full"
                 />
               </div>
             </Col>

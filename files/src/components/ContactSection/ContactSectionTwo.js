@@ -21,9 +21,7 @@ const ContactSectionTwo = () => {
           <Col lg={6}>
             <div className="contact-two__content">
               <div className="sec-title">
-                <h2 className="font-bold">
-                  {title} 
-                </h2>
+                <h2 className="font-bold">{title}</h2>
               </div>
               {/* <div className="contact-two__text px-6">
                 <ul>
@@ -35,10 +33,18 @@ const ContactSectionTwo = () => {
 
               {/* <div className="font-semibold  contact-two__text">If the answer to any of the above questions is yes, then you have certainly reached the correct place!</div> */}
               <div className="contact-two__text  mb-2">
-              As technology advances, organizations are often left managing large volumes of aging or obsolete IT equipment that have reached end of life. From servers to storages, and networking gear, outdated assets need to be retired properly according to regulations through IT asset disposition (ITAD) services.
+                As technology advances, organizations are often left managing
+                large volumes of aging or obsolete IT equipment that have
+                reached end of life. From servers to storages, and networking
+                gear, outdated assets need to be retired properly according to
+                regulations through IT asset disposition (ITAD) services.
               </div>
               <div className="contact-two__text ">
-                            Zaco&apos;s comprehensive IT asset disposition services provide a solution to help clients worldwide safely and sustainably dispose all types of outdated IT assets. With over 15 years of experience in ITAD, we have the expertise and global infrastructure to handle large-scale ITAD projects.
+                Zaco&apos;s comprehensive IT asset disposition services provide
+                a solution to help clients worldwide safely and sustainably
+                dispose all types of outdated IT assets. With over 15 years of
+                experience in ITAD, we have the expertise and global
+                infrastructure to handle large-scale ITAD projects.
               </div>
               {/* <div className="contact-two__social">
                 {socials.map((icon, i) => (
@@ -77,7 +83,6 @@ const ContactSectionTwo = () => {
                           required
                         />
                       </div>
-                    
                     </Col>
                     <Col lg={6} md={6} sm={12} className="form-group">
                       <div className="field-inner mb-3">
@@ -96,13 +101,8 @@ const ContactSectionTwo = () => {
                           required
                         />
                       </div>
-
-                  
-                   
                     </Col>
-          
-          
-             
+
                     <Col lg={12} md={12} sm={12} className="form-group">
                       <div className="field-inner">
                         <textarea
@@ -116,10 +116,12 @@ const ContactSectionTwo = () => {
                       <div className="field-inner mb-3">
                         <input
                           type="file"
-                          name="username"
+                          name="inventory_list"
+                          accept=".docx,.xlsx,.pdf"
                           placeholder="Number of Networking Devices"
                           required
                         />
+                         <p className="text-[0.9rem] text-gray-500">Accepted file types: .docx, .xlsx, .pdf</p>
                       </div>
                     </Col>
                     <Col lg={12} md={12} sm={12} className="form-group">

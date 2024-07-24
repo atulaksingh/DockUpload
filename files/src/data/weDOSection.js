@@ -106,17 +106,17 @@ const weDOSection = {
   faqs6: [
     {
       id: 1,
-      title: "Server Storage Maintenance Services",
+      title: "Storage Maintenance Services",
       text:"Unlock the full potential of your storage infrastructure with Zaco's storage maintenance solutions. Our team of experienced technicians is dedicated to providing proactive maintenance and timely solutions to minimize downtime and maximize uptime."
     },
       {
       id: 2,
-      title: "Tailored Server Storage Solutions",
+      title: "Tailored Storage Solutions",
       text:"We recognize that every business has unique enterprise storage requirements. That's why we offer tailored storage solutions to meet your specific needs. Whether you require additional storage capacity, data migration or performance optimization, we have you covered."
     },
     {
       id: 3,
-      title: "Third-Party Storage Maintenance Experts ",
+      title: "THIRD-PARTY STORAGE MAINTENANCE EXPERTS",
       text:"Partnering with Zaco for third-party storage maintenance means entrusting your critical data to seasoned professionals. Our extensive in-hand inventory sets us apart from other third-party maintenance companies. With a diverse range of equipment readily available, we're uniquely positioned to provide swift and effective solutions to your storage maintenance needs, ensuring that your storage environment remains robust and reliable."
     },
     
@@ -222,7 +222,7 @@ const weDOSection = {
     {
       id: 4,
       title: "Customer-Centric Approach:",
-      text:"Your satisfaction is our top priority, and we're committed to delivering exceptional service and support every step of the way.Partner with Zaco Computers UK Limited for reliable IT solutions and unparalleled support. Contact us today to learn more about how we can help your business thrive in today's digital world.  "
+      text:"Your satisfaction is our top priority, and we're committed to delivering exceptional service and support every step of the way. Partner with Zaco Computers UK Limited for reliable IT solutions and unparalleled support. Contact us today to learn more about how we can help your business thrive in today's digital world.  "
     },
     
   

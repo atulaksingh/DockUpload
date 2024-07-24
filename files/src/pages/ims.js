@@ -14,8 +14,13 @@ import FooterSix from "@/components/MainFooter/FooterSix";
 import Style from "@/components/Reuseable/Style";
 import SearchPopup from "@/components/SearchPopup/SearchPopup";
 import IHSS from "@/components/service_Card/IHSS";
+import SliderEight from "@/components/SliderSection/SliderEight";
 import React from "react";
-
+import image6 from "../assets/images/zaco/IT-infrastucture.jpg";
+const bannerData={
+  bg:image6,
+  title:"Optimize and Secure Your IT Infrastructure with Our Expert Managed Services!"
+  };
 function ims() {
   return (
     <>
@@ -27,7 +32,8 @@ function ims() {
         <HeaderTwo />
         <MobileMenu />
         <SearchPopup />
-        <PageBanner title="IT Infrastructure Managed Services" />
+        {/* <PageBanner title="Optimize and Secure Your IT Infrastructure with Our Expert Managed Services!" /> */}
+        <SliderEight bannerData={bannerData}/>
 
         <IntroductionIMS />
         <ImsBenefits />

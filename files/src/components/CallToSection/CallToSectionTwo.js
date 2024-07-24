@@ -12,7 +12,7 @@ const CallToSectionTwo = ({
           <div>
             <h2>
 
-              CONTACT YOUR IT <br/> SOLUTIONS PROVIDER NOW
+              CONTACT YOUR IT SOLUTIONS<br/>  PROVIDER NOW
               {/* We’re Ready to Bring Bigger <br />& Stronger Projects */}
             </h2>
           </div>
@@ -28,7 +28,7 @@ const CallToSectionTwo = ({
           
         </div>
 
-        <h3 className="text-sm   text-white"> Our team of experts is here and will be happy to help you.<br /> Depending on your requirements.</h3>
+        <h3 className="text-sm   text-white"> Our team of experts is here and will be happy to help you.<br />Send us a message or give us a call.</h3>
 
       </div>
     </div>

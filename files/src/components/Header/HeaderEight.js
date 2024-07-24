@@ -90,7 +90,7 @@ const HeaderEight = () => {
                 </span>
                 <span className="mainmenu-eight__call__text">
                   Have any questions? <br />
-                  Free: <strong>{phone2}</strong>
+                  Call: <strong>{phone2}</strong>
                 </span>
               </Link>
             </div>

@@ -51,7 +51,7 @@ const IndexReliableIT = () => {
                   <strong> server rental services </strong>designed to cater to
                   your specific requirements, no matter your location.
                 </div> */}
-                <div className="text clearfix mt-4 text-justify">
+                <div className="text clearfix mt-4 ">
                   As a global business, you need an IT partner you can depend on
                   wherever your operations take you. At Zaco Computers, we
                   provide Infrastructure Managed Services to help multinational
@@ -63,7 +63,7 @@ const IndexReliableIT = () => {
                   tailored to your specific business needs ensure optimal
                   performance and compliance with various global regulations.
                 </div>
-                <div className="text clearfix mt-1 text-justify">
+                <div className="text clearfix mt-1 ">
                   Through proactive IT maintenance and remote management tools,
                   we help predict and prevent potential problems before they
                   impact you. This allows your teams to focus on growth without

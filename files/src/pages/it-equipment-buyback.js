@@ -13,7 +13,12 @@ import FooterSix from '@/components/MainFooter/FooterSix'
 import Style from '@/components/Reuseable/Style'
 import SearchPopup from '@/components/SearchPopup/SearchPopup'
 import React from 'react'
-
+import image6 from "../assets/images/zaco/IT-ASSET-DISPOSITON.jpg";
+import SliderEight from '@/components/SliderSection/SliderEight'
+const bannerData={
+  bg:image6,
+  title:"Safely and Sustainably Dispose of  Your IT Assets with Zaco's Expert ITAD Services"
+  };
 function itequipmentbuyback() {
     return (
         <>
@@ -24,7 +29,8 @@ function itequipmentbuyback() {
                 <HeaderTwo />
                 <MobileMenu />
                 <SearchPopup />
-                <NewBanner title="IT Asset Disposition Services" title2="We offer best price for disposing your IT hardware" />
+                {/* <NewBanner title="Safely and Sustainably Dispose of Your IT Assets with Zaco's Expert ITAD Services" title2="We offer best price for disposing your IT hardware" /> */}
+                <SliderEight bannerData={bannerData}/>
                 <ContactSectionTwo />
                 {/* <FeatureEight /> */}
                 <FaqsSection />

@@ -19,6 +19,12 @@ import WeWorkSection from "@/components/WeWorkSection/WeWorkSection";
 import React from "react";
 import bg from "@/images/zaco/SERVICES/SERVICES-banner.png";
 import HeaderSix from "@/components/Header/HeaderSix";
+import SliderEight from "@/components/SliderSection/SliderEight";
+import image6 from "../assets/images/zaco/SERVICES/IT-SERVICES-LANDINGPAGE1.jpg";
+const bannerData={
+  bg:image6,
+  title:"Expert IT Support to Keep Your Business Running Smoothly, Anytime, Anywhere."
+  };
 const services = () => {
   return (
     <Layout pageTitle="Services">
@@ -28,7 +34,12 @@ const services = () => {
       <HeaderTwo />
       <MobileMenu />
       <SearchPopup />
-      <PageBanner title="Services" />
+      {/* <PageBanner title="Expert IT Support to Keep Your Business Running Smoothly, Anytime, Anywhere" /> */}
+
+      <SliderEight bannerData={bannerData}/>
+
+
+
       {/* <PageBanner title="Services"  BnImage={bg}/> */}
       {/* <BlogEight /> */}
       {/* <ServicesSectionOne /> */}

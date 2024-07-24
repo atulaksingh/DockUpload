@@ -12,7 +12,12 @@ import Introduction from "@/components/network_maintenance/Introduction";
 import ServiceCard from "@/components/network_maintenance/ServiceCard";
 import Support from "@/components/network_maintenance/Support";
 import React from "react";
-
+import image6 from "../assets/images/zaco/NETWORK-SUPPORT-AND-MAINTENANCE/IT-NETWORT-MAINTANCE.jpg";
+import SliderEight from "@/components/SliderSection/SliderEight";
+const bannerData={
+  bg:image6,
+  title:"Seamless Connectivity and Maximum Uptime for Your Global IT Network!"
+  };
 function networkMaintenance() {
   return (
     <>
@@ -24,7 +29,9 @@ function networkMaintenance() {
         <HeaderTwo />
         <MobileMenu />
         <SearchPopup />
-        <PageBanner title="IT Network Support and Maintenance" />
+        {/* <PageBanner title="Seamless Connectivity and Maximum Uptime for Your Global IT Network!" /> */}
+        
+      <SliderEight bannerData={bannerData}/>
         <Introduction />
         <ServiceCard />
         <Support />

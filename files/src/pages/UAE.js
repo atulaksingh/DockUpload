@@ -29,8 +29,8 @@ import image1 from "../assets/images/zaco/UAE/UAE-Home-1.jpg";
 import image2 from "../assets/images/zaco/UAE/UAE-Home-2.jpg";
 import image3 from "../assets/images/zaco/UAE/UAE-Home-3.jpg";
 import image4 from "../assets/images/zaco/UAE/UAE-Home-4.jpg";
-import image5 from "../assets/images/zaco/UAE/UAE-Home-5.jpg";
-import image6 from "../assets/images/zaco/UAE/UAE-Home-6.jpg";
+import image5 from "../assets/images/zaco/UAE/two-1.jpg";
+import image6 from "../assets/images/zaco/UAE/women.jpg";
 import contact from "../assets/images/zaco/UAE/contact-uae-1.jpg";
 import React from "react";
 const bannerData={

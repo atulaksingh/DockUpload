@@ -27,7 +27,7 @@ import image1 from "../assets/images/zaco/UK/uk-home-1.jpg";
 import image2 from "../assets/images/zaco/UK/uk-home-2.jpg";
 import image3 from "../assets/images/zaco/UK/uk-home-3.jpg";
 import image4 from "../assets/images/zaco/UK/uk-home-4.jpg";
-import image5 from "../assets/images/zaco/UK/uk-home-5.jpg";
+import image5 from "../assets/images/zaco/UK/two.jpg";
 import image6 from "../assets/images/zaco/UK/uk-home-6.jpg";
 import contact from "../assets/images/zaco/UK/contact-uae-1.jpg";
 import React from "react";
@@ -83,6 +83,7 @@ function UK() {
         <MobileMenu />
         <SearchPopup />
         <SliderEight bannerData={bannerData}/>
+        
         <ItBusiness canadaData={CanadaData}  />
         <ItSolution CanadaDataITS={CanadaDataITS}/>
         <TrustedIt CanadaDataTIT={CanadaDataTIT}/>

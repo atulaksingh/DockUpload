@@ -54,8 +54,8 @@ export const getQuoteTwo = {
     },
     {
       type: "text",
-      name: "subject",
-      placeholder: "Subject",
+      name: "title",
+      placeholder: "title",
     },
     {
       name: "message",

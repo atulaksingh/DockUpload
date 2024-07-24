@@ -176,7 +176,7 @@ export const blogEight = {
       image: "IT-Hardware-Solutions.png",
       date: "16 sep",
       title: "IT Hardware Solutions",
-      text: "Transform your workspace with our proven IT hardware solutions. Experience us uninterrupted performance and superior productivity with our tailored, high-performance offerings.",
+      text: "Transform your workspace with our proven IT hardware solutions. Experience uninterrupted performance and superior productivity with our tailored, high-performance offerings.",
       admin: "Admin",
       comments: 2,
       href:'/it-hardware-solution'
@@ -199,7 +199,7 @@ export const blogEight = {
       text: "Turning obsolete into opportunity. Our IT Asset Disposition services offer a seamless, eco-friendly solution for retiring outdated technology responsibly.",
       admin: "Admin",
       comments: 2,
-      href:"/ims"
+      href:"it-equipment-buyback"
     },
     {
       id: 4,
